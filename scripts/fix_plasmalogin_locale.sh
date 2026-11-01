@@ -10,9 +10,3 @@ cat > /var/lib/plasmalogin/.config/plasma-localerc <<'EOF'
 [Formats]
 LANG=pt_BR.UTF-8
 LC_TIME=pt_BR.UTF-8
-EOF
-chown -R plasmalogin:plasmalogin /var/lib/plasmalogin/.config
-systemctl restart plasmalogin
-echo "Locale do greeter aplicado (pt_BR)."
-EOF
-path: /var/home/zapados/hub/scripts/fix_plasmalogin_locale.sh

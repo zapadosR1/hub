@@ -1,36 +1,43 @@
-# Correção: montagem automática do servidor (SSHFS)
+# Configuração do hub com compartilhamento GitHub
 
-## Problema
+## Objetivo
 
-A pasta `~/servidor` (remoto `public_html`) nem sempre montava no login,
-enquanto `~/servidor2` (remoto `tizomer.com`) montava corretamente. O script
-`montar_servidor.sh` era executado via autostart, mas podia rodar antes da rede
-estar disponível, causando falha silenciosa na primeira tentativa.
+Criar a pasta `~/hub` como repositório Git sincronizado automaticamente com
+um repositório GitHub, para compartilhar procedimentos e ajudar a comunidade.
 
-## Causa
+## Estrutura criada
 
-- O script usava `sleep 10` fixo e uma única tentativa de `sshfs`.
-- Não havia verificação de conectividade antes da montagem.
-- Não havia retentativa em caso de falha.
+- `~/hub/procedures/` — documentação coletada.
+- `~/hub/scripts/` — scripts de montagem e sincronização.
+- `~/hub/fixes/` — documentação das correções.
+- `~/hub/config/` — configurações relevantes.
 
-## Correção aplicada
+## Sincronização automática
 
-O script `montar_servidor.sh` foi ajustado para:
+- Script: `~/hub/scripts/sync_hub.sh`
+- Usa a variável de ambiente `GITHUB_TOKEN` (PAT com permissão `repo`).
+- Timer systemd (user): `hub-sync.timer` (a cada 5 minutos).
 
-1. Aguardar até 60 segundos pela rede (ping ao host remoto).
-2. Tentar montar cada pasta até 5 vezes, com espera entre tentativas.
-3. Só considerar montado quando `mountpoint` confirmar.
+## Configuração do token
 
-## Arquivo
-
-- `~/montar_servidor.sh`
-- `~/hub/scripts/montar_servidor.sh` (cópia de referência)
-
-## Verificação
+Adicione ao `~/.bashrc` ou `~/.profile`:
 
 ```bash
-mount | grep servidor
-ls ~/servidor ~/servidor2
+export GITHUB_TOKEN=ghp_SEU_TOKEN
 ```
-EOF
-path: /var/home/zapados/hub/fixes/01-montagem-sshfs.md
+
+Ou em `~/.config/hub/env`:
+
+```bash
+GITHUB_TOKEN=ghp_SEU_TOKEN
+```
+
+## Primeiro push
+
+```bash
+export GITHUB_TOKEN=ghp_SEU_TOKEN
+~/hub/scripts/sync_hub.sh
+```
+
+O script cria o repositório remoto `zapadosR1/hub` via API do GitHub (se não
+existir) e envia o conteúdo.

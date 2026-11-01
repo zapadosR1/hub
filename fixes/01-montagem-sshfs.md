@@ -1,44 +1,34 @@
-# Hub de procedimentos — OnePlus 6T / Fedora 44 Kinoite (Plasma Mobile)
+# Correção: montagem automática do servidor (SSHFS)
 
-Este repositório reúne procedimentos, scripts e documentação usados para
-configurar e corrigir um **OnePlus 6T (fajita, sdm845)** rodando
-**Fedora 44 Kinoite / Plasma Mobile**.
+## Problema
 
-## Estrutura
+A pasta `~/servidor` (remoto `public_html`) nem sempre montava no login,
+enquanto `~/servidor2` (remoto `tizomer.com`) montava corretamente. O script
+`montar_servidor.sh` era executado via autostart, mas podia rodar antes da rede
+estar disponível, causando falha silenciosa na primeira tentativa.
 
-- `procedures/` — diagnósticos e anotações coletadas (pasta `Projeto Padrão`,
-  `PLANO-EMERGENCIA.md`, `diagnostico.txt`).
-- `scripts/` — scripts de montagem (SSHFS) e sincronização com o GitHub.
-- `fixes/` — documentação das correções aplicadas (boot, Wi-Fi, SSHFS, hub).
-- `config/` — configurações relevantes (autostart, systemd user).
+## Causa
 
-## Sincronização automática com o GitHub
+- O script usava `sleep 10` fixo e uma única tentativa de `sshfs`.
+- Não havia verificação de conectividade antes da montagem.
+- Não havia retentativa em caso de falha.
 
-1. Defina o token (PAT com permissão `repo`):
-   ```bash
-   export GITHUB_TOKEN=ghp_...
-   ```
-   Para persistir, adicione a linha acima em `~/.bashrc` ou `~/.profile`.
+## Correção aplicada
 
-2. Rode o script de sincronização:
-   ```bash
-   ~/hub/scripts/sync_hub.sh
-   ```
+O script `montar_servidor.sh` foi ajustado para:
 
-3. Para sincronização automática, habilite o timer do systemd (user):
-   ```bash
-   systemctl --user enable --now hub-sync.timer
-   ```
+1. Aguardar até 60 segundos pela rede (ping ao host remoto).
+2. Tentar montar cada pasta até 5 vezes, com espera entre tentativas.
+3. Só considerar montado quando `mountpoint` confirmar.
 
-## Montagem automática dos servidores (SSHFS)
+## Arquivo
 
-O script `~/montar_servidor.sh` monta `~/servidor` (public_html) e
-`~/servidor2` (tizomer.com). Ele é executado no login via autostart e agora
-aguarda a rede e tenta novamente em caso de falha.
+- `~/montar_servidor.sh`
+- `~/hub/scripts/montar_servidor.sh` (cópia de referência)
 
-## Comunidade
+## Verificação
 
-Contribuições e relatos de problemas são bem-vindos. Abra uma issue ou PR no
-repositório GitHub.
-EOF
-path: /var/home/zapados/hub/README.md
+```bash
+mount | grep servidor
+ls ~/servidor ~/servidor2
+```

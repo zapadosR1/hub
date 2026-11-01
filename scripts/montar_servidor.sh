@@ -52,5 +52,3 @@ montar "$REMOTE_DIR_1" "$LOCAL_DIR_1"
 montar "$REMOTE_DIR_2" "$LOCAL_DIR_2"
 
 echo "--- Finalizado ---"
-EOF
-path: /var/home/zapados/montar_servidor.sh

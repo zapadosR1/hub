@@ -65,5 +65,3 @@ else
 fi
 
 echo "--- Sincronização concluída ---"
-EOF
-path: /var/home/zapados/hub/scripts/sync_hub.sh

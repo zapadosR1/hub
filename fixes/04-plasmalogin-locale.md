@@ -31,5 +31,3 @@ incorreto.
 
 Documentado para referência da comunidade. Ajustes de root não foram aplicados
 nesta sessão (ambiente sem privilégios de root).
-EOF
-path: /var/home/zapados/hub/fixes/04-plasmalogin-locale.md

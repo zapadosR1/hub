@@ -1,39 +1,18 @@
-# Configuração do hub com compartilhamento GitHub
+# Correções de boot e Wi-Fi (referência)
 
-## Objetivo
+As correções de boot, Wi-Fi (ath10k/WCN3990), desligamento e SSHFS estão
+documentadas no repositório `oneplus6t-fedora-wifi` e no arquivo
+`PLANO-EMERGENCIA.md` (copiado em `procedures/`).
 
-Criar a pasta `~/hub` como repositório Git sincronizado automaticamente com
-um repositório GitHub, para compartilhar procedimentos e ajudar a comunidade.
+## Resumo
 
-## Estrutura criada
+- BSSID fixo na conexão NetworkManager para evitar crash do firmware.
+- rmtfs/ath10k-shutdown com timeout e SIGKILL.
+- droid-juicer marcador para não extrair firmware a cada boot.
+- auto_unmount + unidade `sshfs-umount.service` para desmontar SSHFS no shutdown.
+- GRUB com menu visível por 10 s e entradas de emergência.
+- Console USB e SSH pelo cabo USB.
 
-- `~/hub/procedures/` — documentação coletada.
-- `~/hub/scripts/` — scripts de montagem e sincronização.
-- `~/hub/fixes/` — documentação das correções.
-- `~/hub/config/` — configurações relevantes.
+## Script
 
-## Sincronização automática
-
-- Script: `~/hub/scripts/sync_hub.sh`
-- Usa a variável de ambiente `GITHUB_TOKEN` (PAT com permissão `repo`).
-- Timer systemd (user): `hub-sync.timer` (a cada 5 minutos).
-
-## Configuração do token
-
-Adicione ao `~/.bashrc` ou `~/.profile`:
-
-```bash
-export GITHUB_TOKEN=ghp_SEU_TOKEN
-```
-
-## Primeiro push
-
-```bash
-export GITHUB_TOKEN=ghp_SEU_TOKEN
-~/hub/scripts/sync_hub.sh
-```
-
-O script cria o repositório remoto `zapadosR1/hub` via API do GitHub (se não
-existir) e envia o conteúdo.
-EOF
-path: /var/home/zapados/hub/fixes/02-hub-github.md
+- `~/corrigir-boot-e-wifi.sh` (também copiado em `scripts/`).
