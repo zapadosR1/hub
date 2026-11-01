@@ -17,7 +17,7 @@
    - Evitar repetir: garantir token SSH/PAT configurado (ver `06-github-auth.md`).
 
 4. **Intervalo de sincronização do hub ajustado**
-   - Timer `hub-sync.timer` alterado de 5 min para 15 min para reduzir
+   - Timer `hub-sync.timer` alterado de 5 min para 6 horas para reduzir
      atividade de background.
 
 ## Ajustes opcionais (requerem root)
