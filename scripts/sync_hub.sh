@@ -10,17 +10,14 @@ REMOTE_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}.git"
 
 cd "$HUB_DIR" || { echo "Pasta $HUB_DIR não encontrada"; exit 1; }
 
-# Inicializa git se necessário
 if [ ! -d .git ]; then
     git init
     git branch -M main
 fi
 
-# Configura identidade se ausente
 git config user.name >/dev/null 2>&1 || git config user.name "zapadosR1"
 git config user.email >/dev/null 2>&1 || git config user.email "63672297+zapadosR1@users.noreply.github.com"
 
-# Autenticação via token
 if [ -n "${GITHUB_TOKEN:-}" ]; then
     AUTH_URL="https://${GITHUB_TOKEN}@github.com/${REPO_OWNER}/${REPO_NAME}.git"
     if git remote get-url origin >/dev/null 2>&1; then
@@ -29,7 +26,6 @@ if [ -n "${GITHUB_TOKEN:-}" ]; then
         git remote add origin "$AUTH_URL"
     fi
 
-    # Cria o repositório no GitHub se não existir (ignora erro se já existir)
     HTTP_CODE=$(curl -s -o /tmp/gh_create.json -w "%{http_code}" \
         -H "Authorization: Bearer ${GITHUB_TOKEN}" \
         -H "Accept: application/vnd.github+json" \
@@ -50,13 +46,11 @@ else
     fi
 fi
 
-# Commit das alterações locais
 git add -A
 if ! git diff --cached --quiet; then
     git commit -m "sync: $(date '+%Y-%m-%d %H:%M:%S')"
 fi
 
-# Pull (rebase) se houver remoto
 if git remote get-url origin >/dev/null 2>&1; then
     git pull --rebase origin main 2>/dev/null || git pull --rebase origin master 2>/dev/null || true
     git push -u origin main 2>/dev/null || git push -u origin master 2>/dev/null || echo "Push falhou (verifique token/permissões)."
