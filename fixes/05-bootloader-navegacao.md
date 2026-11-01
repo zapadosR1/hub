@@ -35,6 +35,32 @@ sudo bash ~/hub/scripts/adjust_grub_mobile.sh
 O script regenera o `grub.cfg` com validação e backup, como em
 `corrigir-boot-e-wifi.sh`.
 
+## Recuperação automática (já configurada)
+
+Este sistema já possui mecanismo de recuperação automática, sem necessidade
+de teclado:
+
+- `grub-boot-success.timer` (user) marca `boot_success=1` após 2 minutos
+  de sessão ativa.
+- `08_fallback_counting` no GRUB: se `boot_success=0` após um upgrade,
+  decrementa `boot_counter`; ao chegar a 0, boota o deployment anterior
+  (rollback) automaticamente.
+- `12_menu_auto_hide` esconde o menu quando o último boot foi OK, mas o
+  fallback ainda funciona mesmo com menu oculto.
+
+Ou seja: se um update quebrar o boot, o sistema tenta algumas vezes e
+depois volta sozinho para a versão anterior. Não é necessário intervenção
+manual para evitar loop infinito.
+
+## Mostrar sempre o menu (opcional, requer root)
+
+Se quiser o menu sempre visível (para usar teclado USB), desative o
+auto-hide:
+
+```bash
+sudo grub2-editenv /boot/grub2/grubenv set menu_auto_hide=0
+```
+
 ## Nota
 
 Mapear volume/power para o GRUB exigiria um bootloader personalizado
