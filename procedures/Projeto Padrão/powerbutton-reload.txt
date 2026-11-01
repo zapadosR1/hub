@@ -1,9 +1,0 @@
-== aplicando via dbus ==
-== reiniciando powerdevil ==
-[1] 7269
-7269 /usr/libexec/org_kde_powerdevil
-org.kde.powerdevil: [DDCutilDetector]: Could not initialize ddcutil API. Not using DDC for monitor brightness.
-qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: App info not found for 'org.kde.org_kde_powerdevil'")
-org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "Charge thresholds are not supported by the kernel for this hardware"
-org.kde.powerdevil: Handle button events action could not check for screen configuration
-org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "Charge thresholds are not supported by the kernel for this hardware"

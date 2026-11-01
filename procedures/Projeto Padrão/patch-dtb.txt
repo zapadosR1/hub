@@ -1,6 +1,0 @@
-== antes ==
-ti,bq27541
-'/boot/efi/dtb/qcom/sdm845-oneplus-fajita.dtb' -> '/var/home/zapados/Documentos/Projeto Padrão/backup-sdm845-oneplus-fajita.dtb.bin'
-ocorrencias: 1
-== depois ==
-ti,bq27411

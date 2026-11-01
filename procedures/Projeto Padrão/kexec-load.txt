@@ -1,6 +1,0 @@
-== version ==
-kexec-tools 2.0.32
-VMLINUZ=/boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/vmlinuz-6.16.7-0.sdm845.fc44.aarch64
-INITRD=/boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/initramfs-6.16.7-0.sdm845.fc44.aarch64.img
-== carga ==
-exit=0

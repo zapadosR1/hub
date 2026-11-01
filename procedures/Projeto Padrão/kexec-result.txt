@@ -1,9 +1,0 @@
-== compatible ==
-bash: /proc/device-tree/soc@0/i2c@*/bq27411*/compatible: Arquivo ou diretório inexistente
-== upower ==
-  native-path:          pmi8998-charger
-  native-path:          bq27541-0
-    energy-full-design:  14,256 Wh
-    voltage:             0,039 V
-    percentage:          100%
-    percentage:          100%

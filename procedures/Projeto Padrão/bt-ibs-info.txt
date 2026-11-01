@@ -1,9 +1,0 @@
-== debugfs ibs ==
-head: não foi possível abrir '/sys/kernel/debug/bluetooth/hci0/ibs/*' para leitura: Arquivo ou diretório inexistente
-== btmgmt info ==
-Index list with 0 items
-[1;39mInvalid command in menu mgmt: unconfig[0m
-[1;39m
-Use "help" for a list of available commands in a menu.
-Use "menu <submenu>" if you want to enter any submenu.
-Use "back" if you want to return to menu main.[0m

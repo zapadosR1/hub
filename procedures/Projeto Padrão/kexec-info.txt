@@ -1,6 +1,0 @@
-== kexec ==
-== kernel/initrd/dtb ==
-ls: não foi possível acessar '/boot/grub2/sdm845-oneplus-fajita.dtb': Permissão negada
--rw-------. 1 root root 98539083 out 30 01:44 /boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/initramfs-6.16.7-0.sdm845.fc44.aarch64.img
--rwxr-xr-x. 1 root root 16019968 out 30 01:44 /boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/vmlinuz-6.16.7-0.sdm845.fc44.aarch64
-grep: /boot/grub2/sdm845-oneplus-fajita.dtb: Permissão negada

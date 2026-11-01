@@ -1,8 +1,0 @@
- ├─ Sinks:
- │      60. Áudio interno Headphones           [vol: 1.00]
- │  *   61. Áudio interno Speaker              [vol: 0.50]
- │  
- ├─ Sources:
- ├─ Sinks:
- │  
- ├─ Sources:

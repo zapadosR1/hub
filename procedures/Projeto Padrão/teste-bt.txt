@@ -1,3 +1,0 @@
-serial0-0
-Falha de segmentação     echo serial0-0 | sudo tee /sys/bus/serial/drivers/hci_uart_qca/unbind
-serial0-0
