@@ -1,0 +1,28 @@
+== arquivos que contem ti,bq27541 ==
+/boot/efi/dtb/qcom/msm8996-oneplus3.dtb
+/boot/efi/dtb/qcom/msm8996-oneplus3t.dtb
+/boot/efi/dtb/qcom/sdm845-oneplus-fajita.dtb
+/boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/dtb/qcom/msm8996-oneplus3.dtb
+/boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/dtb/qcom/msm8996-oneplus3t.dtb
+
+== dtb oneplus no ESP ==
+
+== EFI ==
+/boot/efi/EFI/BOOT:
+total 1184
+drwx------. 2 root root   16384 jan  1  1980 .
+drwx------. 4 root root   16384 jan  1  1980 ..
+-rwx------. 1 root root 1045768 jan  1  1980 BOOTAA64.EFI
+-rwx------. 1 root root  120576 jan  1  1980 fbaa64.efi
+
+/boot/efi/EFI/fedora:
+total 7328
+drwx------. 2 root root   16384 set  3 20:54 .
+drwx------. 4 root root   16384 jan  1  1980 ..
+-rwx------. 1 root root     112 jan  1  1980 BOOTAA64.CSV
+-rwx------. 1 root root      53 set  3 20:54 bootuuid.cfg
+-rwx------. 1 root root 4403624 jan  1  1980 grubaa64.efi
+-rwx------. 1 root root     657 set  3 20:54 grub.cfg
+-rwx------. 1 root root  912128 jan  1  1980 mmaa64.efi
+-rwx------. 1 root root 1045768 jan  1  1980 shimaa64.efi
+-rwx------. 1 root root 1045768 jan  1  1980 shim.efi

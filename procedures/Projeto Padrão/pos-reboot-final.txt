@@ -1,0 +1,59 @@
+== 1. Bateria ==
+Device: /org/freedesktop/UPower/devices/battery_bq27411_0
+  native-path:          bq27411-0
+  vendor:               Texas Instruments
+  power supply:         yes
+  updated:              sex 30 out 2026 23:37:24 (15 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               charging
+    warning-level:       none
+    energy:              10,3268 Wh
+    energy-empty:        0 Wh
+    energy-full:         17,3052 Wh
+    energy-full-design:  14,256 Wh
+    voltage-min-design:  3,4 V
+    voltage-max-design:  4,4 V
+    capacity-level:      Normal
+    energy-rate:         4,664 W
+    voltage:             4,092 V
+== 2. Bluetooth dmesg ==
+[   20.621523] Bluetooth: Core ver 2.22
+[   20.621580] NET: Registered PF_BLUETOOTH protocol family
+[   20.621583] Bluetooth: HCI device and connection manager initialized
+[   20.621593] Bluetooth: HCI socket layer initialized
+[   20.621598] Bluetooth: L2CAP socket layer initialized
+[   20.621605] Bluetooth: SCO socket layer initialized
+[   20.716373] Bluetooth: HCI UART driver ver 2.3
+[   20.716384] Bluetooth: HCI UART protocol H4 registered
+[   20.716387] Bluetooth: HCI UART protocol BCSP registered
+[   20.717315] Bluetooth: HCI UART protocol LL registered
+[   20.717320] Bluetooth: HCI UART protocol ATH3K registered
+[   20.718712] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[   20.727772] Bluetooth: HCI UART protocol Intel registered
+[   20.732544] Bluetooth: HCI UART protocol Broadcom registered
+[   20.738119] Bluetooth: HCI UART protocol QCA registered
+[   20.738123] Bluetooth: HCI UART protocol AG6XX registered
+[   20.738150] Bluetooth: HCI UART protocol Marvell registered
+[   20.777146] Bluetooth: hci0: setting up wcn399x
+[   20.901578] Bluetooth: hci0: QCA Product ID   :0x0000000a
+[   20.901586] Bluetooth: hci0: QCA SOC Version  :0x40010214
+[   20.901589] Bluetooth: hci0: QCA ROM Version  :0x00000201
+[   20.901591] Bluetooth: hci0: QCA Patch Version:0x00000001
+[   20.911925] Bluetooth: hci0: QCA controller version 0x02140201
+[   20.911937] Bluetooth: hci0: QCA Downloading qca/crbtfw21.tlv
+[   21.733444] Bluetooth: hci0: QCA Downloading qca/oneplus6/crnv21.bin
+[   21.766373] Bluetooth: hci0: QCA TLV with error stat 0x0 rtype 0x4 (0x5)
+[   21.774830] Bluetooth: hci0: QCA setup on UART is completed
+[   23.785301] Bluetooth: hci0: Opcode 0x0c03 failed: -110
+[   23.863440] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[   23.863463] Bluetooth: BNEP filters: protocol multicast
+[   23.863481] Bluetooth: BNEP socket layer initialized
+[   25.833363] Bluetooth: hci0: Failed to read MSFT supported features (-110)
+[   27.880321] Bluetooth: hci0: AOSP get vendor capabilities (-110)
+[   29.296983] ath10k_snoc 18800000.wifi: qmi fw_version 0x20028032 fw_build_timestamp 2021-10-05 01:59 fw_build_id QC_IMAGE_VERSION_STRING=WLAN.HL.2.0.c8-00050-QCAHLSWMTPLZ-1.435283.1.441421.1
+== 3. Bluetooth controller ==
+No default controller available

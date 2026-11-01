@@ -1,0 +1,34 @@
+== flag apos boot ==
+dtb_fix=1
+== compat em uso ==
+ti,bq27541
+
+== bateria ==
+Device: /org/freedesktop/UPower/devices/battery_bq27541_0
+  native-path:          bq27541-0
+  vendor:               Texas Instruments
+  power supply:         yes
+  updated:              sex 30 out 2026 15:17:26 (8 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    energy:              2,4288 Wh
+    energy-empty:        0 Wh
+    energy-full:         288,345 Wh
+    energy-full-design:  14,256 Wh
+    voltage-min-design:  3,4 V
+    voltage-max-design:  4,4 V
+    capacity-level:      Normal
+    energy-rate:         10,538 W
+    voltage:             0,552 V
+    charge-cycles:       552
+    time to empty:       13,8 minutes
+    percentage:          100%
+    capacity:            100%
+    technology:          lithium-ion
+    icon-name:          'battery-full-symbolic'
+  History (voltage):

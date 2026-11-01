@@ -1,0 +1,160 @@
+ModemManager[18430]: <msg> [1793457324.403810] ModemManager (version 1.24.2-3.fc44) starting in system bus...
+ModemManager[18430]: <dbg> [1793457324.404338] [charsets] detecting platform iconv() support...
+ModemManager[18430]: <dbg> [1793457324.404609] [charsets]   UTF-8: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.404758] [charsets]   UCS-2BE: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.404808] [charsets]   ASCII: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.405348] [charsets]   ISO8859-1: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.405511] [charsets]   CP437: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.405693] [charsets]   CP850: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.405868] [charsets]   UTF-16BE: iconv conversion to/from charset is supported
+ModemManager[18430]: <dbg> [1793457324.407334] Full suspend/resume hooks enabled
+ModemManager[18430]: <dbg> [1793457324.408244] [sleep-monitor-systemd] singleton created
+ModemManager[18430]: <dbg> [1793457324.411464] bus acquired, creating manager...
+ModemManager[18430]: <dbg> [1793457324.414806] [auth-provider] singleton created
+ModemManager[18430]: <dbg> [1793457324.415124] [filter] created
+ModemManager[18430]: <dbg> [1793457324.415177] [filter]   explicit allowlist:         yes
+ModemManager[18430]: <dbg> [1793457324.415202] [filter]   explicit blocklist:         yes
+ModemManager[18430]: <dbg> [1793457324.415229] [filter]   plugin allowlist:           yes
+ModemManager[18430]: <dbg> [1793457324.415248] [filter]   qrtr devices allowed:       yes
+ModemManager[18430]: <dbg> [1793457324.415270] [filter]   virtual devices forbidden:  yes
+ModemManager[18430]: <dbg> [1793457324.415292] [filter]   net devices allowed:        yes
+ModemManager[18430]: <dbg> [1793457324.415310] [filter]   usbmisc devices allowed:    yes
+ModemManager[18430]: <dbg> [1793457324.415328] [filter]   rpmsg devices allowed:      yes
+ModemManager[18430]: <dbg> [1793457324.415358] [filter]   wwan devices allowed:       yes
+ModemManager[18430]: <dbg> [1793457324.415377] [filter]   tty devices:
+ModemManager[18430]: <dbg> [1793457324.415394] [filter]       platform driver check:    yes
+ModemManager[18430]: <dbg> [1793457324.415412] [filter]       driver check:             yes
+ModemManager[18430]: <dbg> [1793457324.415429] [filter]       cdc-acm interface check:  yes
+ModemManager[18430]: <dbg> [1793457324.415448] [filter]       with net check:           yes
+ModemManager[18430]: <dbg> [1793457324.415467] [filter]       default:                  forbidden
+ModemManager[18430]: <dbg> [1793457324.415555] [plugin-manager] looking for plugins in '/usr/lib64/ModemManager'
+ModemManager[18430]: <dbg> [1793457324.416222] [plugin-manager] loaded shared 'xmm' utils from '/usr/lib64/ModemManager/libmm-shared-xmm.so'
+ModemManager[18430]: <dbg> [1793457324.416651] [plugin-manager] loaded shared 'telit' utils from '/usr/lib64/ModemManager/libmm-shared-telit.so'
+ModemManager[18430]: <dbg> [1793457324.417053] [plugin-manager] loaded shared 'sierra' utils from '/usr/lib64/ModemManager/libmm-shared-sierra.so'
+ModemManager[18430]: <dbg> [1793457324.417412] [plugin-manager] loaded shared 'quectel' utils from '/usr/lib64/ModemManager/libmm-shared-quectel.so'
+ModemManager[18430]: <dbg> [1793457324.417723] [plugin-manager] loaded shared 'option' utils from '/usr/lib64/ModemManager/libmm-shared-option.so'
+ModemManager[18430]: <dbg> [1793457324.418009] [plugin-manager] loaded shared 'novatel' utils from '/usr/lib64/ModemManager/libmm-shared-novatel.so'
+ModemManager[18430]: <dbg> [1793457324.418231] [plugin-manager] loaded shared 'mtk' utils from '/usr/lib64/ModemManager/libmm-shared-mtk.so'
+ModemManager[18430]: <dbg> [1793457324.418572] [plugin-manager] loaded shared 'icera' utils from '/usr/lib64/ModemManager/libmm-shared-icera.so'
+ModemManager[18430]: <dbg> [1793457324.418865] [plugin-manager] loaded shared 'foxconn' utils from '/usr/lib64/ModemManager/libmm-shared-foxconn.so'
+ModemManager[18430]: <dbg> [1793457324.419213] [plugin-manager] loaded shared 'fibocom' utils from '/usr/lib64/ModemManager/libmm-shared-fibocom.so'
+ModemManager[18430]: <dbg> [1793457324.419760] [plugin-manager] loaded plugin 'zte' from '/usr/lib64/ModemManager/libmm-plugin-zte.so'
+ModemManager[18430]: <dbg> [1793457324.419814] [filter] registered plugin allowlist vendor id: 19d2
+ModemManager[18430]: <dbg> [1793457324.420118] [plugin-manager] loaded plugin 'x22x' from '/usr/lib64/ModemManager/libmm-plugin-x22x.so'
+ModemManager[18430]: <dbg> [1793457324.420164] [filter] registered plugin allowlist tag: ID_MM_X22X_TAGGED
+ModemManager[18430]: <dbg> [1793457324.420187] [filter] registered plugin allowlist vendor id: 1bbb
+ModemManager[18430]: <dbg> [1793457324.420207] [filter] registered plugin allowlist vendor id: 0b3c
+ModemManager[18430]: <dbg> [1793457324.420469] [plugin-manager] loaded plugin 'wavecom' from '/usr/lib64/ModemManager/libmm-plugin-wavecom.so'
+ModemManager[18430]: <dbg> [1793457324.420510] [filter] registered plugin allowlist vendor id: 114f
+ModemManager[18430]: <dbg> [1793457324.420786] [plugin-manager] loaded plugin 'via' from '/usr/lib64/ModemManager/libmm-plugin-via.so'
+ModemManager[18430]: <dbg> [1793457324.421138] [plugin-manager] loaded plugin 'u-blox' from '/usr/lib64/ModemManager/libmm-plugin-ublox.so'
+ModemManager[18430]: <dbg> [1793457324.421183] [filter] registered plugin allowlist vendor id: 1546
+ModemManager[18430]: <dbg> [1793457324.421382] [plugin-manager] loaded plugin 'tp-link' from '/usr/lib64/ModemManager/libmm-plugin-tplink.so'
+ModemManager[18430]: <dbg> [1793457324.421422] [filter] registered plugin allowlist vendor id: 2357
+ModemManager[18430]: <dbg> [1793457324.421704] [plugin-manager] loaded plugin 'thuraya' from '/usr/lib64/ModemManager/libmm-plugin-thuraya.so'
+ModemManager[18430]: <dbg> [1793457324.421746] [filter] registered plugin allowlist vendor id: 1a26
+ModemManager[18430]: <dbg> [1793457324.421978] [plugin-manager] loaded plugin 'telit' from '/usr/lib64/ModemManager/libmm-plugin-telit.so'
+ModemManager[18430]: <dbg> [1793457324.422018] [filter] registered plugin allowlist vendor id: 1bc7
+ModemManager[18430]: <dbg> [1793457324.422041] [filter] registered plugin allowlist subsystem vendor id: 17cb:1c5d
+ModemManager[18430]: <dbg> [1793457324.422328] [plugin-manager] loaded plugin 'simtech' from '/usr/lib64/ModemManager/libmm-plugin-simtech.so'
+ModemManager[18430]: <dbg> [1793457324.422367] [filter] registered plugin allowlist vendor id: 1e0e
+ModemManager[18430]: <dbg> [1793457324.422593] [plugin-manager] loaded plugin 'sierra' from '/usr/lib64/ModemManager/libmm-plugin-sierra.so'
+ModemManager[18430]: <dbg> [1793457324.422634] [filter] registered plugin allowlist vendor id: 1199
+ModemManager[18430]: <dbg> [1793457324.422888] [plugin-manager] loaded plugin 'sierra-legacy' from '/usr/lib64/ModemManager/libmm-plugin-sierra-legacy.so'
+ModemManager[18430]: <dbg> [1793457324.423109] [plugin-manager] loaded plugin 'samsung' from '/usr/lib64/ModemManager/libmm-plugin-samsung.so'
+ModemManager[18430]: <dbg> [1793457324.423149] [filter] registered plugin allowlist product id: 04e8:6872
+ModemManager[18430]: <dbg> [1793457324.423171] [filter] registered plugin allowlist product id: 04e8:6906
+ModemManager[18430]: <dbg> [1793457324.423384] [plugin-manager] loaded plugin 'rolling' from '/usr/lib64/ModemManager/libmm-plugin-rolling.so'
+ModemManager[18430]: <dbg> [1793457324.423422] [filter] registered plugin allowlist vendor id: 33f8
+ModemManager[18430]: <dbg> [1793457324.423666] [plugin-manager] loaded plugin 'quectel' from '/usr/lib64/ModemManager/libmm-plugin-quectel.so'
+ModemManager[18430]: <dbg> [1793457324.423707] [filter] registered plugin allowlist vendor id: 2c7c
+ModemManager[18430]: <dbg> [1793457324.423733] [filter] registered plugin allowlist vendor id: 1eac
+ModemManager[18430]: <dbg> [1793457324.423957] [plugin-manager] loaded plugin 'qcom-soc' from '/usr/lib64/ModemManager/libmm-plugin-qcom-soc.so'
+ModemManager[18430]: <dbg> [1793457324.423999] [filter] registered plugin allowlist tag: ID_MM_QCOM_SOC
+ModemManager[18430]: <dbg> [1793457324.424258] [plugin-manager] loaded plugin 'pantech' from '/usr/lib64/ModemManager/libmm-plugin-pantech.so'
+ModemManager[18430]: <dbg> [1793457324.424312] [filter] registered plugin allowlist vendor id: 106c
+ModemManager[18430]: <dbg> [1793457324.424580] [plugin-manager] loaded plugin 'option' from '/usr/lib64/ModemManager/libmm-plugin-option.so'
+ModemManager[18430]: <dbg> [1793457324.424621] [filter] registered plugin allowlist vendor id: 0af0
+ModemManager[18430]: <dbg> [1793457324.424648] [filter] registered plugin allowlist vendor id: 1931
+ModemManager[18430]: <dbg> [1793457324.424956] [plugin-manager] loaded plugin 'option-hso' from '/usr/lib64/ModemManager/libmm-plugin-option-hso.so'
+ModemManager[18430]: <dbg> [1793457324.425185] [plugin-manager] loaded plugin 'novatel' from '/usr/lib64/ModemManager/libmm-plugin-novatel.so'
+ModemManager[18430]: <dbg> [1793457324.425224] [filter] registered plugin allowlist vendor id: 1410
+ModemManager[18430]: <dbg> [1793457324.425519] [plugin-manager] loaded plugin 'novatel-lte' from '/usr/lib64/ModemManager/libmm-plugin-novatel-lte.so'
+ModemManager[18430]: <dbg> [1793457324.425570] [filter] registered plugin allowlist product id: 1410:9010
+ModemManager[18430]: <dbg> [1793457324.425817] [plugin-manager] loaded plugin 'nokia' from '/usr/lib64/ModemManager/libmm-plugin-nokia.so'
+ModemManager[18430]: <dbg> [1793457324.425855] [filter] registered plugin allowlist vendor id: 0421
+ModemManager[18430]: <dbg> [1793457324.426065] [plugin-manager] loaded plugin 'nokia-icera' from '/usr/lib64/ModemManager/libmm-plugin-nokia-icera.so'
+ModemManager[18430]: <dbg> [1793457324.426291] [plugin-manager] loaded plugin 'netprisma' from '/usr/lib64/ModemManager/libmm-plugin-netprisma.so'
+ModemManager[18430]: <dbg> [1793457324.426330] [filter] registered plugin allowlist vendor id: 3731
+ModemManager[18430]: <dbg> [1793457324.426352] [filter] registered plugin allowlist vendor id: 203e
+ModemManager[18430]: <dbg> [1793457324.426626] [plugin-manager] loaded plugin 'mtk' from '/usr/lib64/ModemManager/libmm-plugin-mtk.so'
+ModemManager[18430]: <dbg> [1793457324.426895] [plugin-manager] loaded plugin 'mtk-legacy' from '/usr/lib64/ModemManager/libmm-plugin-mtk-legacy.so'
+ModemManager[18430]: <dbg> [1793457324.426934] [filter] registered plugin allowlist tag: ID_MM_MTK_TAGGED
+ModemManager[18430]: <dbg> [1793457324.427158] [plugin-manager] loaded plugin 'motorola' from '/usr/lib64/ModemManager/libmm-plugin-motorola.so'
+ModemManager[18430]: <dbg> [1793457324.427197] [filter] registered plugin allowlist product id: 22b8:3802
+ModemManager[18430]: <dbg> [1793457324.427219] [filter] registered plugin allowlist product id: 22b8:4902
+ModemManager[18430]: <dbg> [1793457324.427473] [plugin-manager] loaded plugin 'longcheer' from '/usr/lib64/ModemManager/libmm-plugin-longcheer.so'
+ModemManager[18430]: <dbg> [1793457324.427512] [filter] registered plugin allowlist tag: ID_MM_LONGCHEER_TAGGED
+ModemManager[18430]: <dbg> [1793457324.427550] [filter] registered plugin allowlist vendor id: 1c9e
+ModemManager[18430]: <dbg> [1793457324.427808] [plugin-manager] loaded plugin 'linktop' from '/usr/lib64/ModemManager/libmm-plugin-linktop.so'
+ModemManager[18430]: <dbg> [1793457324.427848] [filter] registered plugin allowlist vendor id: 230d
+ModemManager[18430]: <dbg> [1793457324.428124] [plugin-manager] loaded plugin 'iridium' from '/usr/lib64/ModemManager/libmm-plugin-iridium.so'
+ModemManager[18430]: <dbg> [1793457324.428164] [filter] registered plugin allowlist vendor id: 1edd
+ModemManager[18430]: <dbg> [1793457324.428408] [plugin-manager] loaded plugin 'Intel' from '/usr/lib64/ModemManager/libmm-plugin-intel.so'
+ModemManager[18430]: <dbg> [1793457324.428449] [filter] registered plugin allowlist vendor id: 8086
+ModemManager[18430]: <dbg> [1793457324.428848] [plugin-manager] loaded plugin 'huawei' from '/usr/lib64/ModemManager/libmm-plugin-huawei.so'
+ModemManager[18430]: <dbg> [1793457324.428888] [filter] registered plugin allowlist vendor id: 12d1
+ModemManager[18430]: <dbg> [1793457324.429104] [plugin-manager] loaded plugin 'haier' from '/usr/lib64/ModemManager/libmm-plugin-haier.so'
+ModemManager[18430]: <dbg> [1793457324.429155] [filter] registered plugin allowlist vendor id: 201e
+ModemManager[18430]: <dbg> [1793457324.429350] [plugin-manager] loaded plugin 'gosuncn' from '/usr/lib64/ModemManager/libmm-plugin-gosuncn.so'
+ModemManager[18430]: <dbg> [1793457324.429388] [filter] registered plugin allowlist vendor id: 305a
+ModemManager[18430]: <dbg> [1793457324.429608] [plugin-manager] loaded plugin 'generic' from '/usr/lib64/ModemManager/libmm-plugin-generic.so'
+ModemManager[18430]: <dbg> [1793457324.429830] [plugin-manager] loaded plugin 'foxconn' from '/usr/lib64/ModemManager/libmm-plugin-foxconn.so'
+ModemManager[18430]: <dbg> [1793457324.429869] [filter] registered plugin allowlist vendor id: 0489
+ModemManager[18430]: <dbg> [1793457324.429889] [filter] registered plugin allowlist vendor id: 105b
+ModemManager[18430]: <dbg> [1793457324.430141] [plugin-manager] loaded plugin 'fibocom' from '/usr/lib64/ModemManager/libmm-plugin-fibocom.so'
+ModemManager[18430]: <dbg> [1793457324.430179] [filter] registered plugin allowlist vendor id: 2cb7
+ModemManager[18430]: <dbg> [1793457324.430199] [filter] registered plugin allowlist vendor id: 1782
+ModemManager[18430]: <dbg> [1793457324.430216] [filter] registered plugin allowlist vendor id: 1508
+ModemManager[18430]: <dbg> [1793457324.430501] [plugin-manager] loaded plugin 'ericsson-mbm' from '/usr/lib64/ModemManager/libmm-plugin-ericsson-mbm.so'
+ModemManager[18430]: <dbg> [1793457324.430551] [filter] registered plugin allowlist tag: ID_MM_ERICSSON_MBM
+ModemManager[18430]: <dbg> [1793457324.430752] [plugin-manager] loaded plugin 'd-link' from '/usr/lib64/ModemManager/libmm-plugin-dlink.so'
+ModemManager[18430]: <dbg> [1793457324.430791] [filter] registered plugin allowlist vendor id: 2001
+ModemManager[18430]: <dbg> [1793457324.431080] [plugin-manager] loaded plugin 'dell' from '/usr/lib64/ModemManager/libmm-plugin-dell.so'
+ModemManager[18430]: <dbg> [1793457324.431120] [filter] registered plugin allowlist vendor id: 413c
+ModemManager[18430]: <dbg> [1793457324.431473] [plugin-manager] loaded plugin 'cinterion' from '/usr/lib64/ModemManager/libmm-plugin-cinterion.so'
+ModemManager[18430]: <dbg> [1793457324.431513] [filter] registered plugin allowlist vendor id: 1e2d
+ModemManager[18430]: <dbg> [1793457324.431568] [filter] registered plugin allowlist vendor id: 0681
+ModemManager[18430]: <dbg> [1793457324.431589] [filter] registered plugin allowlist vendor id: 1269
+ModemManager[18430]: <dbg> [1793457324.431786] [plugin-manager] loaded plugin 'cellient' from '/usr/lib64/ModemManager/libmm-plugin-cellient.so'
+ModemManager[18430]: <dbg> [1793457324.431824] [filter] registered plugin allowlist vendor id: 2692
+ModemManager[18430]: <dbg> [1793457324.432017] [plugin-manager] loaded plugin 'broadmobi' from '/usr/lib64/ModemManager/libmm-plugin-broadmobi.so'
+ModemManager[18430]: <dbg> [1793457324.432056] [filter] registered plugin allowlist vendor id: 2020
+ModemManager[18430]: <dbg> [1793457324.432301] [plugin-manager] loaded plugin 'anydata' from '/usr/lib64/ModemManager/libmm-plugin-anydata.so'
+ModemManager[18430]: <dbg> [1793457324.432340] [filter] registered plugin allowlist vendor id: 16d5
+ModemManager[18430]: <dbg> [1793457324.432633] [plugin-manager] loaded plugin 'altair-lte' from '/usr/lib64/ModemManager/libmm-plugin-altair-lte.so'
+ModemManager[18430]: <dbg> [1793457324.432673] [filter] registered plugin allowlist product id: 216f:0047
+ModemManager[18430]: <dbg> [1793457324.432698] [plugin-manager] successfully loaded 44 plugins registering 6 subsystems: tty, net, usbmisc, wwan, rpmsg, qrtr
+ModemManager[18430]: <dbg> [1793457324.434909] [qrtr] socket lookup from 1:0
+ModemManager[18430]: <dbg> [1793457324.435339] [qrtr] added server on 0:1 -> service 66, version 1, instance 180
+ModemManager[18430]: <dbg> [1793457324.435414] [qrtr] created new node 0
+ModemManager[18430]: <dbg> [1793457324.435497] [qrtr] added server on 0:4 -> service 43, version 2, instance 18
+ModemManager[18430]: <dbg> [1793457324.435567] [qrtr] added server on 0:26 -> service 15, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435626] [qrtr] added server on 0:27 -> service 51, version 1, instance 2
+ModemManager[18430]: <dbg> [1793457324.435661] [qrtr] added server on 0:28 -> service 21, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435692] [qrtr] added server on 0:29 -> service 24, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435728] [qrtr] added server on 0:30 -> service 23, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435758] [qrtr] added server on 0:31 -> service 22, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435792] [qrtr] added server on 0:33 -> service 36, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435834] [qrtr] added server on 0:34 -> service 49, version 1, instance 2
+ModemManager[18430]: <dbg> [1793457324.435865] [qrtr] added server on 0:38 -> service 54, version 1, instance 0
+ModemManager[18430]: <dbg> [1793457324.435896] [qrtr] added server on 0:40 -> service 17, version 1, instance 0
+ModemManager[18430]: <wrn> [1793457324.435924] could not acquire the 'org.freedesktop.ModemManager1' service name
+ModemManager[18430]: <dbg> [1793457324.435952] [base-manager] stopping connection in object manager server
+ModemManager[18430]: <dbg> [1793457324.436046] [sleep-context] new context with 20 second timeout
+ModemManager[18430]: <dbg> [1793457324.436083] [base-manager] manager shutting down... (disable,remove)
+ModemManager[18430]: <dbg> [1793457324.436114] [base-manager] cleanup complete
+ModemManager[18430]: <dbg> [1793457324.436133] [sleep-context] completing with success
+ModemManager[18430]: <msg> [1793457324.436873] ModemManager is shut down
+ModemManager[18430]: <dbg> [1793457324.437067] [auth-provider] singleton disposed
+ModemManager[18430]: <dbg> [1793457324.437164] [sleep-monitor-systemd] singleton disposed

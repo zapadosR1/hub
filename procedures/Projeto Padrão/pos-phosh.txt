@@ -1,0 +1,44 @@
+== deployment ativo (o ● deve ser aba5921f...) ==
+State: idle
+Deployments:
+● ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+          LayeredPackages: glibc-langpack-pt langpacks-pt_BR phoc phosh
+                           phosh-mobile-settings tailscale
+
+  ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+          LayeredPackages: glibc-langpack-pt langpacks-pt_BR tailscale
+== sessoes disponiveis ==
+phosh.desktop
+plasma.desktop
+plasma-mobile.desktop
+== bateria ==
+Device: /org/freedesktop/UPower/devices/battery_bq27411_0
+  native-path:          bq27411-0
+  vendor:               Texas Instruments
+  power supply:         yes
+  updated:              sáb 31 out 2026 11:55:04 (18 seconds ago)
+== bt / som ==
+hci0:	Type: Primary  Bus: UART
+	BD Address: 02:00:E8:C5:BD:B5  ACL MTU: 1024:7  SCO MTU: 240:4
+input.loopback.sink.role.multimedia
+== adsp ==
+adsp offline
+4080000.remoteproc running
+cdsp offline
+slpi offline
+== boot ==
+up 8 minutes
+  UNIT                            LOAD   ACTIVE SUB    DESCRIPTION
+● bootloader-update.service       loaded failed failed Update bootloader on boot
+● droid-juicer.service            loaded failed failed Android vendor firmware extraction
+● msm-modem-uim-selection.service loaded failed failed MSM Modem UIM Slot Selection
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+3 loaded units listed.

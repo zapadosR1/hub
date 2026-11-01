@@ -1,0 +1,12 @@
+== sinks ==
+ ├─ Sinks:
+ │      57. Saída de falsa                     [vol: 1.00]
+ │  
+ ├─ Sources:
+ ├─ Sinks:
+ │  
+ ├─ Sources:
+== id do alto-falante:  ==
+ └─ Default Configured Devices:
+== teste (3 s, deve sair pelo celular) ==
+Terminado                  timeout 3 speaker-test -t sine -f 440 -c 2 -l 1 2>&1 | tail -n 3

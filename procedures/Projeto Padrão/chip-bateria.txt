@@ -1,0 +1,7 @@
+== driver ==
+driver=bq27xxx-battery
+== devicetype ==
+0x0421
+== rebind ==
+bq27541-0
+pmi8998-charger

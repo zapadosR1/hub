@@ -1,0 +1,127 @@
+== cards pulse/pipewire ==
+60	alsa_card.platform-sound	alsa
+69	alsa_output.platform-sound.HiFi__Headphones__sink	PipeWire	s16le 2ch 48000Hz	SUSPENDED
+70	alsa_output.platform-sound.HiFi__Speaker__sink	PipeWire	s16le 2ch 48000Hz	IDLE
+86	input.loopback.sink.role.multimedia	PipeWire	float32le 2ch 48000Hz	IDLE
+89	input.loopback.sink.role.notification	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+92	input.loopback.sink.role.phone	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+95	input.loopback.sink.role.alarm	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+98	input.loopback.sink.role.ringtone	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+100	input.loopback.sink.role.alert	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+== erros do audio (dmesg) ==
+[   20.404090] ipa 1e40000.ipa: Direct firmware load for qcom/sdm845/oneplus6/ipa_fws.mbn failed with error -2
+[   20.404098] ipa 1e40000.ipa: error -2 requesting "qcom/sdm845/oneplus6/ipa_fws.mbn"
+[   20.423694] remoteproc remoteproc1: Direct firmware load for qcom/sdm845/oneplus6/adsp.mbn failed with error -2
+[   20.423930] remoteproc remoteproc1: Direct firmware load for qcom/sdm845/oneplus6/adsp.mbn failed with error -2
+[   20.457052] remoteproc remoteproc2: Direct firmware load for qcom/sdm845/oneplus6/cdsp.mbn failed with error -2
+[   20.457181] remoteproc remoteproc2: Direct firmware load for qcom/sdm845/oneplus6/cdsp.mbn failed with error -2
+[   20.493530] remoteproc remoteproc3: Direct firmware load for qcom/sdm845/oneplus6/slpi.mbn failed with error -2
+[   20.493572] remoteproc remoteproc3: Direct firmware load for qcom/sdm845/oneplus6/slpi.mbn failed with error -2
+[   20.611186] qcom-venus aa00000.video-codec: Direct firmware load for qcom/sdm845/oneplus6/venus.mbn failed with error -2
+== wireplumber (usuario) ==
+out 31 10:44:54 fedora systemd[1849]: Started wireplumber.service - Multimedia Service Session Manager.
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.512636432] [2005]  INFO Camera camera_manager.cpp:340 libcamera v0.7.2
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.562819187] [2039]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 'imx376'
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.562870958] [2039]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.562915906] [2039]  WARN CameraSensor camera_sensor_legacy.cpp:502 'imx376 17-0010': No sensor delays found in static properties. Assuming unverified defaults.
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.563492312] [2039]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 'imx371'
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.563508510] [2039]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.563516427] [2039]  WARN CameraSensor camera_sensor_legacy.cpp:502 'imx371 16-0010': No sensor delays found in static properties. Assuming unverified defaults.
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.614229598] [2039]  WARN IPAProxy ipa_proxy.cpp:196 Configuration file 'imx376.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.614341473] [2039]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for imx376
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.614651421] [2039]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4a000/i2c-bus@1/camera@10' for pipeline handler simple
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.628331888] [2039]  WARN IPAProxy ipa_proxy.cpp:196 Configuration file 'imx371.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.628441836] [2039]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for imx371
+out 31 10:44:54 fedora wireplumber[2005]: [0:00:51.628769597] [2039]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4a000/i2c-bus@0/camera@10' for pipeline handler simple
+out 31 10:56:27 fedora wireplumber[2005]: s-linking: <WpSiStandardLink:0xaaaad00b5440> Link was not activated before removing
+out 31 10:56:27 fedora wireplumber[2005]: s-linking: <WpSiStandardLink:0xaaaacfe550e0> Link was not activated before removing
+out 31 10:56:27 fedora wireplumber[2005]: s-linking: <WpSiStandardLink:0xaaaacfec8060> Link was not activated before removing
+out 31 10:56:27 fedora wireplumber[2005]: s-linking: <WpSiStandardLink:0xaaaacfe58820> Link was not activated before removing
+out 31 10:56:27 fedora wireplumber[2005]: s-linking: <WpSiStandardLink:0xaaaacfdc5c50> Link was not activated before removing
+out 31 10:57:18 fedora systemd[1849]: Stopping wireplumber.service - Multimedia Service Session Manager...
+out 31 10:57:18 fedora systemd[1849]: Stopped wireplumber.service - Multimedia Service Session Manager.
+out 31 10:57:18 fedora systemd[1849]: wireplumber.service: Consumed 3.905s CPU time over 12min 24.174s wall clock time, 57.8M memory peak.
+out 31 10:57:18 fedora systemd[1849]: Started wireplumber.service - Multimedia Service Session Manager.
+out 31 10:57:45 fedora wireplumber[4018]: wp-event-dispatcher: <WpAsyncEventHook:0xaaaacf43a520> failed: failed to activate item: Object activation aborted: proxy destroyed
+out 31 10:57:45 fedora wireplumber[4018]: wp-event-dispatcher: <WpAsyncEventHook:0xaaaacf43a520> failed: failed to activate item: Object activation aborted: proxy destroyed
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.084834084] [4018]  INFO Camera camera_manager.cpp:340 libcamera v0.7.2
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.120592672] [4088]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 'imx376'
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.120639808] [4088]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.130065028] [4088]  WARN CameraSensor camera_sensor_legacy.cpp:502 'imx376 17-0010': No sensor delays found in static properties. Assuming unverified defaults.
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.130842581] [4088]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 'imx371'
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.130861487] [4088]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.130872269] [4088]  WARN CameraSensor camera_sensor_legacy.cpp:502 'imx371 16-0010': No sensor delays found in static properties. Assuming unverified defaults.
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.177367485] [4088]  WARN IPAProxy ipa_proxy.cpp:196 Configuration file 'imx376.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.177477537] [4088]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for imx376
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.177787434] [4088]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4a000/i2c-bus@1/camera@10' for pipeline handler simple
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.193676725] [4088]  WARN IPAProxy ipa_proxy.cpp:196 Configuration file 'imx371.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.193767298] [4088]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for imx371
+out 31 10:57:45 fedora wireplumber[4018]: [0:13:42.194066361] [4088]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4a000/i2c-bus@0/camera@10' for pipeline handler simple
+== pipewire (usuario) ==
+out 31 10:44:54 fedora systemd[1849]: Started pipewire.service - PipeWire Multimedia Service.
+out 31 10:44:54 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:45:32 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:47:53 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:49:38 fedora pipewire[2003]: default: 0xaaaad9f9a2a0: got connection error -32 (Pipe quebrado)
+out 31 10:49:38 fedora pipewire[2003]: mod.raop-sink: error -32
+out 31 10:54:38 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:55:50 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:56:26 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:56:40 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:56:55 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:57:07 fedora pipewire[2003]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+out 31 10:57:18 fedora systemd[1849]: Stopping pipewire.service - PipeWire Multimedia Service...
+out 31 10:57:18 fedora systemd[1849]: Stopped pipewire.service - PipeWire Multimedia Service.
+out 31 10:57:18 fedora systemd[1849]: pipewire.service: Consumed 1.521s CPU time over 12min 24.187s wall clock time, 47.2M memory peak.
+out 31 10:57:18 fedora systemd[1849]: Started pipewire.service - PipeWire Multimedia Service.
+out 31 10:57:27 fedora pipewire[4017]: mod.raop-sink: sess.latency.msec 250,000000 should be an integer multiple of rtp.ptime 7,981859
+== ucm (perfis de placa) ==
+Allwinner
+AMD
+Amlogic
+blobs
+codecs
+common
+conf.d
+conf.virt.d
+DEBUG.md
+Google
+HDA
+Intel
+IO-Boards
+lib
+MediaTek
+module
+NXP
+OMAP
+OnePlus
+platforms
+Qualcomm
+README.md
+Rockchip
+Samsung
+SHIFT
+sof-soundwire
+Tegra
+ucm.conf
+USB-Audio
+Xiaomi
+sdm845
+snd_soc_sdm845.conf
+/usr/share/alsa/ucm2/OnePlus/:
+fajita
+sdm845
+bash: alsaucm: comando não encontrado
+== placa 0 ==
+O6T
+card: 0
+device: 0
+subdevice: 0
+stream: PLAYBACK
+id: MultiMedia1 (*)
+name: 
+subname: subdevice #0
+class: 0
+subclass: 0
+subdevices_count: 1
+subdevices_avail: 1

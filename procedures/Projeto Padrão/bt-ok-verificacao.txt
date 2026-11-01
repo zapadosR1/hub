@@ -1,0 +1,53 @@
+== hci0 ==
+hci0:	Type: Primary  Bus: UART
+	BD Address: 02:00:E8:C5:BD:B5  ACL MTU: 1024:7  SCO MTU: 240:4
+	UP RUNNING 
+	RX bytes:5770 acl:0 sco:0 events:185 errors:0
+	TX bytes:379826 acl:0 sco:0 commands:1601 errors:0
+	Features: 0xff 0xfe 0x8f 0xfe 0xd8 0x3f 0x5b 0x87
+== bluetoothctl ==
+Controller 02:00:E8:C5:BD:B5 (public)
+	Manufacturer: 0x001d (29)
+	Version: 0x09 (9)
+	Name: fedora
+	Alias: fedora
+	Class: 0x007c0110 (8126736)
+	Powered: yes
+	PowerState: on
+	Discoverable: no
+	DiscoverableTimeout: 0x000000b4 (180)
+	Pairable: yes
+	UUID: Message Notification Se.. (00001133-0000-1000-8000-00805f9b34fb)
+== firmware em uso (md5) ==
+4fceacf111c621d93666aaeafc1eaf56  /var/lib/firmware-extract/qca/crbtfw21.tlv
+e31b6b4fc3eb807dac73b0838dfa3265  /var/lib/firmware-extract/qca/oneplus6/crnv21.bin
+== bluetooth deste boot ==
+[   25.763147] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.764355] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.765490] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.766648] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.767883] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.769032] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.770183] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.771333] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.772636] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.773891] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.775690] Bluetooth: hci0: Malformed MSFT vendor event: 0x00
+[   25.780580] Bluetooth: hci0: QCA setup on UART is completed
+[   25.910686] Bluetooth: hci0: AOSP extensions version v0.96
+[   25.910712] Bluetooth: hci0: AOSP quality report is not supported
+[   29.571719] ath10k_snoc 18800000.wifi: qmi fw_version 0x20028032 fw_build_timestamp 2021-10-05 01:59 fw_build_id QC_IMAGE_VERSION_STRING=WLAN.HL.2.0.c8-00050-QCAHLSWMTPLZ-1.435283.1.441421.1
+== bootloader-update ==
+out 18 00:00:13 fedora systemd[1]: Starting bootloader-update.service - Update bootloader on boot...
+out 18 00:00:14 fedora bootupctl[1064]: error: Failed to update EFI: Failed to find all esp devices
+out 18 00:00:14 fedora systemd[1]: bootloader-update.service: Main process exited, code=exited, status=1/FAILURE
+out 18 00:00:14 fedora systemd[1]: bootloader-update.service: Failed with result 'exit-code'.
+out 18 00:00:14 fedora systemd[1]: Failed to start bootloader-update.service - Update bootloader on boot.
+== droid-juicer ==
+out 18 00:00:13 fedora systemd[1]: Starting droid-juicer.service - Android vendor firmware extraction...
+out 18 00:00:14 fedora droid-juicer[1067]: thread 'main' (1067) panicked at src/firmware.rs:153:44:
+out 18 00:00:14 fedora droid-juicer[1067]: called `Result::unwrap()` on an `Err` value: Os { code: 26, kind: ExecutableFileBusy, message: "Text file busy" }
+out 18 00:00:14 fedora droid-juicer[1067]: note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+out 18 00:00:14 fedora systemd[1]: droid-juicer.service: Main process exited, code=exited, status=101/n/a
+out 18 00:00:14 fedora systemd[1]: droid-juicer.service: Failed with result 'exit-code'.
+out 18 00:00:14 fedora systemd[1]: Failed to start droid-juicer.service - Android vendor firmware extraction.

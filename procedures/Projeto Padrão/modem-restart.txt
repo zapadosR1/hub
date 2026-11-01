@@ -1,0 +1,39 @@
+== 1. Reiniciando modem (remoteproc) ==
+bash: /sys/class/remoteproc/remoteproc1/state: Permissão negada
+running
+bash: /sys/class/remoteproc/remoteproc1/state: Permissão negada
+running
+== 2. Verificando SIM após restart ==
+[qrtr://0/] Successfully got card status
+Provisioning applications:
+	Primary GW:   session doesn't exist
+	Primary 1X:   session doesn't exist
+	Secondary GW: session doesn't exist
+	Secondary 1X: session doesn't exist
+Slot [1]:
+	Card state: 'error: no-atr-received (3)'
+	UPIN state: 'not-initialized'
+		UPIN retries: '0'
+		UPUK retries: '0'
+Slot [2]:
+	Card state: 'error: no-atr-received (3)'
+	UPIN state: 'not-initialized'
+		UPIN retries: '0'
+		UPUK retries: '0'
+== 3. Estado do modem ==
+[qrtr://0/] Operating mode retrieved:
+	Mode: 'online'
+	HW restricted: 'no'
+== 4. Verificando rmtfs e tqftpserv ==
+● rmtfs.service - Qualcomm remotefs service
+     Loaded: loaded (/usr/lib/systemd/system/rmtfs.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Sat 2026-10-17 21:00:20 -03; 1 week 6 days ago
+ Invocation: 84d776dd993d4267b8ea12465eed426c
+   Main PID: 1049 (rmtfs)
+      Tasks: 1 (limit: 9196)
+     Memory: 6.4M (peak: 95M, swap: 20.1M, swap peak: 20.1M)
+        CPU: 361ms
+     CGroup: /system.slice/rmtfs.service
+             └─1049 /usr/bin/rmtfs -r -P -s

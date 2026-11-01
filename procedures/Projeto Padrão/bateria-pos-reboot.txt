@@ -1,0 +1,66 @@
+== compat no DT em uso ==
+
+bash: /compatible: Arquivo ou diretório inexistente
+
+== power_supply ==
+-- /sys/class/power_supply/bq27541-0/
+OF_NAME=bq27441-battery
+OF_FULLNAME=/soc@0/geniqup@ac0000/i2c@a88000/bq27441-battery@55
+POWER_SUPPLY_NAME=bq27541-0
+POWER_SUPPLY_VOLTAGE_NOW=715000
+POWER_SUPPLY_CHARGE_FULL=65533000
+POWER_SUPPLY_CHARGE_NOW=715000
+POWER_SUPPLY_CAPACITY=3545
+POWER_SUPPLY_TEMP=-2474
+-- /sys/class/power_supply/pmi8998-charger/
+OF_NAME=charger
+OF_FULLNAME=/soc@0/spmi@c440000/pmic@2/charger@1000
+POWER_SUPPLY_NAME=pmi8998-charger
+POWER_SUPPLY_VOLTAGE_NOW=0
+POWER_SUPPLY_MODEL_NAME=c440000.spmi:pmic@2:charger@1000
+== upower ==
+Device: /org/freedesktop/UPower/devices/line_power_pmi8998_charger
+  native-path:          pmi8998-charger
+  power supply:         yes
+  updated:              dom 18 out 2026 00:00:13 (1091184 seconds ago)
+  has history:          no
+  has statistics:       no
+  line-power
+    warning-level:       none
+    online:              no
+    icon-name:          'ac-adapter-symbolic'
+
+Device: /org/freedesktop/UPower/devices/battery_bq27541_0
+  native-path:          bq27541-0
+  vendor:               Texas Instruments
+  power supply:         yes
+  updated:              sex 30 out 2026 15:06:28 (9 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    energy:              3,1548 Wh
+    energy-empty:        0 Wh
+    energy-full:         288,345 Wh
+    energy-full-design:  14,256 Wh
+    voltage-min-design:  3,4 V
+    voltage-max-design:  4,4 V
+    capacity-level:      Normal
+    energy-rate:         10,538 W
+    voltage:             0,717 V
+    charge-cycles:       717
+    time to empty:       18,0 minutes
+    percentage:          100%
+    capacity:            100%
+    technology:          lithium-ion
+    icon-name:          'battery-full-symbolic'
+  History (voltage):
+    1793372788	0,717	discharging
+    1793372758	0,723	discharging
+    1793372728	0,730	discharging
+    1793372698	0,738	discharging
+
+Device: /org/freedesktop/UPower/devices/DisplayDevice

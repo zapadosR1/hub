@@ -1,0 +1,83 @@
+== cmdline ==
+BOOT_IMAGE=(hd0,gpt17)/boot/ostree/default-7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/vmlinuz-6.16.7-0.sdm845.fc44.aarch64 root=UUID=0c26887f-665f-43fa-bb63-5578670b0c35 rootflags=subvol=/root rw boot=UUID=0c26887f-665f-43fa-bb63-5578670b0c35 init_on_alloc=0 console=tty0 console=ttyS0 ostree=/ostree/boot.1/default/7eef93f08c81d01267ce90dc0da90b33f73064e86f30fbd9a95f39096c337399/0
+== fw_vendor ==
+cat: /sys/firmware/efi/fw_vendor: Arquivo ou diretório inexistente
+
+== chosen ==
+#address-cells
+bootargs
+framebuffer@9d400000
+kaslr-seed
+linux,uefi-mmap-desc-size
+linux,uefi-mmap-desc-ver
+linux,uefi-mmap-size
+linux,uefi-mmap-start
+linux,uefi-system-table
+name
+ranges
+#size-cells
+stdout-path
+u-boot,version
+-- /proc/device-tree/chosen/u-boot,version
+2025.04-rc5
+== model ==
+OnePlus 6T
+== ESP ==
+/boot/efi:
+total 52
+drwx------.  4 root root 16384 jan  1  1970 .
+drwxr-xr-x.  1 root root   100 out 18 00:00 ..
+drwx------. 19 root root 16384 set  3 20:54 dtb
+drwx------.  4 root root 16384 jan  1  1980 EFI
+
+/boot/efi/EFI:
+total 64
+drwx------. 4 root root 16384 jan  1  1980 .
+drwx------. 4 root root 16384 jan  1  1970 ..
+drwx------. 2 root root 16384 jan  1  1980 BOOT
+drwx------. 2 root root 16384 set  3 20:54 fedora
+== dtbs no ESP ==
+/boot/efi/dtb/allwinner/sun50i-a100-allwinner-perf1.dtb
+/boot/efi/dtb/allwinner/sun50i-a133-liontron-h-a133l.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-amarula-relic.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-bananapi-m64.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-nanopi-a64.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-oceanic-5205-5inmfd.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-olinuxino-emmc.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-olinuxino.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-orangepi-win.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pine64-lts.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pine64-plus.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pine64.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pinebook.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pinephone-1.0.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pinephone-1.1.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pinephone-1.2.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pinetab-early-adopter.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-pinetab.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-sopine-baseboard.dtb
+/boot/efi/dtb/allwinner/sun50i-a64-teres-i.dtb
+/boot/efi/dtb/allwinner/sun50i-h313-tanix-tx1.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-bananapi-m2-plus-v1.2.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-bananapi-m2-plus.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-emlid-neutis-n5-devboard.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-libretech-all-h3-cc.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-libretech-all-h3-it.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-libretech-all-h5-cc.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-nanopi-neo-plus2.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-nanopi-neo2.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-nanopi-r1s-h5.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-orangepi-pc2.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-orangepi-prime.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-orangepi-zero-plus.dtb
+/boot/efi/dtb/allwinner/sun50i-h5-orangepi-zero-plus2.dtb
+/boot/efi/dtb/allwinner/sun50i-h6-beelink-gs1.dtb
+/boot/efi/dtb/allwinner/sun50i-h6-orangepi-3.dtb
+/boot/efi/dtb/allwinner/sun50i-h6-orangepi-lite2.dtb
+/boot/efi/dtb/allwinner/sun50i-h6-orangepi-one-plus.dtb
+/boot/efi/dtb/allwinner/sun50i-h6-pine-h64-model-b.dtb
+/boot/efi/dtb/allwinner/sun50i-h6-pine-h64.dtb
+== grub.cfg ==
+72:### BEGIN 10_blscfg.cfg ###
+73:blscfg
+74:### END 10_blscfg.cfg ###

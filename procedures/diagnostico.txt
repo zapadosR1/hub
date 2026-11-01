@@ -1,0 +1,74 @@
+=== OS ===
+NAME="Fedora Linux"
+VERSION="44.20261029.0 (Kinoite)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=44
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 44 (plasma-mobile)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:44"
+DEFAULT_HOSTNAME="fedora"
+HOME_URL="https://kinoite.fedoraproject.org"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora-kinoite/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://pagure.io/fedora-kde/SIG/issues"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=44
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=44
+SUPPORT_END=2027-05-19
+VARIANT="Kinoite"
+VARIANT_ID=kinoite
+OSTREE_VERSION='44.20261029.0'
+=== KERNEL ===
+6.16.7-0.sdm845.fc44.aarch64
+=== USB ===
+=== FPRINTD LIST ===
+Usage: fprintd-list <username> [usernames...]
+=== ENROLL ===
+Impossible to enroll: GDBus.Error:net.reactivated.Fprint.Error.NoSuchDevice: No devices available
+=== JOURNAL ===
+out 30 10:17:13 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 30 10:17:13 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 30 10:17:43 fedora systemd[1]: fprintd.service: Deactivated successfully.
+-- Boot c5b3f7f35c3e475da20d3bc8cc8cd9f2 --
+out 30 11:16:59 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 30 11:16:59 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 30 11:17:29 fedora systemd[1]: fprintd.service: Deactivated successfully.
+-- Boot 119a0023f91d4d08963ca9f1222b8ec8 --
+out 30 17:58:18 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 30 17:58:18 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 30 17:58:48 fedora systemd[1]: fprintd.service: Deactivated successfully.
+-- Boot 4bcc6c41d4824813ac490db8c16b311b --
+out 17 21:04:42 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 17 21:04:42 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 17 21:05:12 fedora systemd[1]: Stopping fprintd.service - Fingerprint Authentication Daemon...
+out 17 21:05:12 fedora systemd[1]: fprintd.service: Deactivated successfully.
+out 17 21:05:12 fedora systemd[1]: Stopped fprintd.service - Fingerprint Authentication Daemon.
+-- Boot 5b48ce5a1e41491393a16c706559a1dd --
+out 31 15:09:08 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 15:09:08 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 31 15:09:20 fedora systemd[1]: Stopping fprintd.service - Fingerprint Authentication Daemon...
+out 31 15:09:20 fedora systemd[1]: fprintd.service: Deactivated successfully.
+out 31 15:09:20 fedora systemd[1]: Stopped fprintd.service - Fingerprint Authentication Daemon.
+-- Boot a1b05916d3104261b63c433f419a90a9 --
+out 31 15:13:35 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 15:13:35 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 31 15:14:06 fedora systemd[1]: fprintd.service: Deactivated successfully.
+out 31 15:14:09 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 15:14:09 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 31 15:14:39 fedora systemd[1]: fprintd.service: Deactivated successfully.
+out 31 15:16:45 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 15:16:46 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 31 15:17:16 fedora systemd[1]: fprintd.service: Deactivated successfully.
+out 31 17:05:34 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 17:05:34 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 31 17:06:04 fedora systemd[1]: fprintd.service: Deactivated successfully.
+out 31 17:06:47 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 17:06:47 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+out 31 17:07:18 fedora systemd[1]: fprintd.service: Deactivated successfully.
+-- Boot d6c32aac580c4f0981c8cbc76c13f64a --
+out 31 17:15:35 fedora systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+out 31 17:15:35 fedora systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.

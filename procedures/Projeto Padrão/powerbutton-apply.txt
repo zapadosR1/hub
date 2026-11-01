@@ -1,0 +1,13 @@
+== powerdevil rodando? ==
+== reiniciando ==
+Failed to restart powerdevil.service: Unit powerdevil.service not found.
+reinicio manual necessario
+== config final ==
+[AC]
+PowerButtonAction=Suspend
+
+[Battery]
+PowerButtonAction=Suspend
+
+[LowBattery]
+PowerButtonAction=Suspend

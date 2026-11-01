@@ -1,0 +1,16 @@
+== 1. SIM slot no device tree ==
+== 2. ModemManager (tentar iniciar) ==
+Failed to start ModemManager.service: Tempo esgotado para conexão
+See system logs and 'systemctl status ModemManager.service' for details.
+error: couldn't create manager: O tempo limite foi alcançado
+== 3. Verificando se SIM está presente ==
+	Card state: 'error: no-atr-received (3)'
+	Card state: 'error: no-atr-received (3)'
+== 4. Tentando selecionar slot 1 ==
+error: couldn't switch slots: QMI protocol error (26): 'NoEffect'
+	Card state: 'error: no-atr-received (3)'
+	Card state: 'error: no-atr-received (3)'
+== 5. Tentando selecionar slot 2 ==
+[qrtr://0/] Successfully switched slots
+	Card state: 'absent'
+	Card state: 'absent'

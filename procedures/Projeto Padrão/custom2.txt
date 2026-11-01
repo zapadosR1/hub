@@ -1,0 +1,16 @@
+== topologia ==
+set BOOT_UUID="0c26887f-665f-43fa-bb63-5578670b0c35"
+composefs / overlay ro,relatime,seclabel,lowerdir+=/run/ostree/.private/cfsroot-lower,datadir+=/sysroot/ostree/repo/objects,redirect_dir=on,metacopy=on
+/dev/sda17[/boot] /boot btrfs rw,relatime,seclabel,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/boot
+== novo custom.cfg ==
+set dtb_probe=yes
+save_env dtb_probe
+if [ "$dtb_fix" = "1" ]; then
+  set dtb_fix=0
+  save_env dtb_fix
+  devicetree $prefix/sdm845-oneplus-fajita.dtb
+fi
+== armando ==
+boot_success=1
+env_block=512+1
+dtb_fix=1

@@ -1,0 +1,5 @@
+Bluetooth monitor ver 5.87
+= Note: Linux version 6.16.7-0.sdm845.fc44.aarch64 (aarch64)           0.561582
+= Note: Bluetooth subsystem version 2.22                               0.561585
+= New Index: 39:90:21:74:07:00 (Primary,UART,hci0)              [hci0] 0.561588
+@ MGMT Open: bluetoothd (privileged) version 1.23             {0x0001} 0.561591

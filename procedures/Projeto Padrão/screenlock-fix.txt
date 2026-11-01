@@ -1,0 +1,8 @@
+== 1. configurando bloqueio de tela ==
+== 2. verificando ==
+[Daemon]
+LockOnResume=true
+Timeout=300
+== 3. aplicando ==
+bash: qdbus6: comando não encontrado
+qdbus6 nao disponivel, config aplicada para proximo login

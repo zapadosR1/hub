@@ -1,0 +1,113 @@
+Device: /org/freedesktop/UPower/devices/battery_bq27541_0
+  native-path:          bq27541-0
+  vendor:               Texas Instruments
+  power supply:         yes
+  updated:              sex 30 out 2026 14:46:56 (8 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               discharging
+    warning-level:       none
+    energy:              4,5188 Wh
+    energy-empty:        0 Wh
+    energy-full:         288,345 Wh
+    energy-full-design:  14,256 Wh
+    voltage-min-design:  3,4 V
+    voltage-max-design:  4,4 V
+    capacity-level:      Normal
+    energy-rate:         10,538 W
+    voltage:             1,027 V
+    charge-cycles:       1027
+    time to empty:       25,7 minutes
+    percentage:          100%
+    capacity:            100%
+    technology:          lithium-ion
+    icon-name:          'battery-full-symbolic'
+  History (voltage):
+    1793371616	1,027	discharging
+    1793371585	1,034	discharging
+    1793371555	1,042	discharging
+    1793371525	1,048	discharging
+
+Device: /org/freedesktop/UPower/devices/line_power_pmi8998_charger
+  native-path:          pmi8998-charger
+  power supply:         yes
+  updated:              dom 18 out 2026 00:00:13 (1090011 seconds ago)
+  has history:          no
+  has statistics:       no
+  line-power
+    warning-level:       none
+    online:              no
+    icon-name:          'ac-adapter-symbolic'
+
+Device: /org/freedesktop/UPower/devices/DisplayDevice
+  power supply:         yes
+  updated:              sex 30 out 2026 14:46:56 (8 seconds ago)
+  has history:          no
+  has statistics:       no
+  battery
+    present:             yes
+    state:               discharging
+    warning-level:       none
+    energy:              4,5188 Wh
+    energy-full:         288,345 Wh
+    energy-rate:         10,538 W
+    charge-cycles:       N/A
+    time to empty:       25,7 minutes
+    percentage:          100%
+    icon-name:          'battery-full-symbolic'
+
+Daemon:
+  daemon-version:  1.91.5
+  on-battery:      yes
+  lid-is-closed:   no
+  lid-is-present:  yes
+  critical-action: Ignore
+== /sys/class/power_supply/bq27541-0/
+DEVTYPE=power_supply
+OF_NAME=bq27441-battery
+OF_FULLNAME=/soc@0/geniqup@ac0000/i2c@a88000/bq27441-battery@55
+OF_COMPATIBLE_0=ti,bq27541
+OF_COMPATIBLE_N=1
+POWER_SUPPLY_NAME=bq27541-0
+POWER_SUPPLY_TYPE=Battery
+POWER_SUPPLY_STATUS=Discharging
+POWER_SUPPLY_HEALTH=Good
+POWER_SUPPLY_PRESENT=1
+POWER_SUPPLY_TECHNOLOGY=Li-ion
+POWER_SUPPLY_CYCLE_COUNT=1025
+POWER_SUPPLY_VOLTAGE_MAX_DESIGN=4400000
+POWER_SUPPLY_VOLTAGE_MIN_DESIGN=3400000
+POWER_SUPPLY_VOLTAGE_NOW=1025000
+POWER_SUPPLY_CURRENT_NOW=-2395000
+POWER_SUPPLY_POWER_AVG=0
+POWER_SUPPLY_CHARGE_FULL_DESIGN=3240000
+POWER_SUPPLY_CHARGE_FULL=65533000
+POWER_SUPPLY_CHARGE_NOW=1025000
+POWER_SUPPLY_CONSTANT_CHARGE_CURRENT_MAX=1800000
+POWER_SUPPLY_CAPACITY=3545
+POWER_SUPPLY_CAPACITY_LEVEL=Normal
+POWER_SUPPLY_TEMP=-2474
+POWER_SUPPLY_TIME_TO_EMPTY_NOW=0
+POWER_SUPPLY_TYPE=Battery
+POWER_SUPPLY_MANUFACTURER=Texas Instruments
+== /sys/class/power_supply/pmi8998-charger/
+DEVTYPE=power_supply
+OF_NAME=charger
+OF_FULLNAME=/soc@0/spmi@c440000/pmic@2/charger@1000
+OF_COMPATIBLE_0=qcom,pmi8998-charger
+OF_COMPATIBLE_N=1
+POWER_SUPPLY_NAME=pmi8998-charger
+POWER_SUPPLY_TYPE=USB
+POWER_SUPPLY_STATUS=Discharging
+POWER_SUPPLY_HEALTH=Good
+POWER_SUPPLY_ONLINE=0
+POWER_SUPPLY_VOLTAGE_NOW=0
+POWER_SUPPLY_CURRENT_MAX=0
+POWER_SUPPLY_CURRENT_NOW=0
+POWER_SUPPLY_TYPE=USB
+POWER_SUPPLY_USB_TYPE=[Unknown] SDP DCP CDP
+POWER_SUPPLY_MODEL_NAME=c440000.spmi:pmic@2:charger@1000
+POWER_SUPPLY_MANUFACTURER=Qualcomm

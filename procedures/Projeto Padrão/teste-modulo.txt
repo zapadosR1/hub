@@ -1,0 +1,48 @@
+== uevent ==
+DEVTYPE=power_supply
+OF_NAME=bq27441-battery
+OF_FULLNAME=/soc@0/geniqup@ac0000/i2c@a88000/bq27441-battery@55
+OF_COMPATIBLE_0=ti,bq27411
+OF_COMPATIBLE_N=1
+POWER_SUPPLY_NAME=bq27411-0
+POWER_SUPPLY_TYPE=Battery
+POWER_SUPPLY_STATUS=Charging
+POWER_SUPPLY_PRESENT=1
+POWER_SUPPLY_TECHNOLOGY=Li-ion
+POWER_SUPPLY_VOLTAGE_MAX_DESIGN=4400000
+POWER_SUPPLY_VOLTAGE_MIN_DESIGN=3400000
+POWER_SUPPLY_VOLTAGE_NOW=3965000
+POWER_SUPPLY_CURRENT_NOW=1232000
+POWER_SUPPLY_CHARGE_FULL_DESIGN=3240000
+POWER_SUPPLY_CHARGE_FULL=3957000
+POWER_SUPPLY_CHARGE_NOW=1652000
+POWER_SUPPLY_CONSTANT_CHARGE_CURRENT_MAX=1800000
+POWER_SUPPLY_CAPACITY=42
+POWER_SUPPLY_CAPACITY_LEVEL=Normal
+POWER_SUPPLY_TEMP=312
+POWER_SUPPLY_TYPE=Battery
+POWER_SUPPLY_MANUFACTURER=Texas Instruments
+== upower ==
+Device: /org/freedesktop/UPower/devices/battery_bq27411_0
+  native-path:          bq27411-0
+  vendor:               Texas Instruments
+  power supply:         yes
+  updated:              sex 30 out 2026 20:50:54 (2 seconds ago)
+  has history:          yes
+  has statistics:       yes
+  battery
+    present:             yes
+    rechargeable:        yes
+    state:               charging
+    warning-level:       none
+    energy:              7,2732 Wh
+    energy-empty:        0 Wh
+    energy-full:         17,4284 Wh
+    energy-full-design:  14,256 Wh
+    voltage-min-design:  3,4 V
+    voltage-max-design:  4,4 V
+    capacity-level:      Normal
+    energy-rate:         4,3252 W
+    voltage:             3,954 V
+    charge-cycles:       N/A
+    time to full:        2,3 hours

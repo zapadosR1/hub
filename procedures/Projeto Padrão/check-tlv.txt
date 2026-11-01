@@ -1,0 +1,11 @@
+== crnv21.bin gravado ==
+total 12
+drwxr-xr-x. 1 root root   48 out 30 21:20 .
+drwxr-xr-x. 1 root root   40 jul 25 00:00 ..
+-rwxr-xr-x. 1 root root 3611 out 30 21:20 crnv21.bin
+-rwxr-xr-x. 1 root root 4619 out 30 21:20 crnv21.bin.bak
+3d62f7c30a16e102abefd1520f8b6fde  /var/lib/firmware-extract/qca/oneplus6/crnv21.bin
+3d62f7c30a16e102abefd1520f8b6fde  /var/home/zapados/Documentos/Projeto Padrão/crnv21-type2.bin
+== comparando crbtfw21.tlv ==
+-rw-r--r--. 1 zapados zapados 177060 out 30 21:26 /var/home/zapados/Documentos/Projeto Padrão/crbtfw21-fedora.tlv
+-rwxr-xr-x. 1 zapados zapados 217676 out 30 21:26 /var/home/zapados/Documentos/Projeto Padrão/crbtfw21-vendor.tlv

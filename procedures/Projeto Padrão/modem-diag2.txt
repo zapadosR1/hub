@@ -1,0 +1,101 @@
+== dependencias do ModemManager ==
+ModemManager.service
+● ├─-.mount
+● ├─dbus.socket
+× ├─msm-modem-uim-selection.service
+● ├─polkit.service
+● ├─system.slice
+● ├─tmp.mount
+● ├─var.mount
+● └─sysinit.target
+●   ├─bootc-sysusers-shadow-sync.service
+●   ├─dev-hugepages.mount
+●   ├─dev-mqueue.mount
+●   ├─dracut-shutdown.service
+○   ├─fips-crypto-policy-overlay.service
+●   ├─kmod-static-nodes.service
+●   ├─ldconfig.service
+●   ├─lvm2-lvmpolld.socket
+●   ├─lvm2-monitor.service
+●   ├─plymouth-read-write.service
+●   ├─plymouth-start.service
+●   ├─proc-sys-fs-binfmt_misc.automount
+○   ├─selinux-autorelabel-mark.service
+●   ├─sys-fs-fuse-connections.mount
+●   ├─sys-kernel-config.mount
+●   ├─sys-kernel-debug.mount
+●   ├─sys-kernel-tracing.mount
+○   ├─systemd-ask-password-console.path
+●   ├─systemd-binfmt.service
+○   ├─systemd-boot-clear-sysfail.service
+○   ├─systemd-boot-random-seed.service
+== por que falhou? ==
+○ ModemManager.service - Modem Manager
+     Loaded: loaded (/usr/lib/systemd/system/ModemManager.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead)
+
+out 17 21:00:31 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 17 21:00:31 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:47:56 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:47:56 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:48:01 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:48:01 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+== journal completo ==
+out 17 21:00:31 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 17 21:00:31 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:47:56 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:47:56 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:48:01 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:48:01 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+== qrtr-lookup (modem presente?) ==
+       21       1        0    0    28 Modem embedded file system service
+       55       1        2    0    48 QMI-SLIM service
+       50       1        0    0    52 UIMRMT service
+       48       1        0    0    73 QMI DFS service
+       71       1        0    0    86 UIMHTTP service
+       77       1        0    0    91 IMS QMI Priv service
+== remoteproc ==
+  remoteproc0: name=adsp state=running
+  remoteproc1: name=4080000.remoteproc state=running
+  remoteproc2: name=cdsp state=offline
+  remoteproc3: name=slpi state=offline
+== firmware do modem ==
+-rw-r--r--. 1 root root    14256 out 17 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/a630_zap.mbn
+-rw-r--r--. 1 root root 11128744 out 17 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/adsp.mbn
+-rw-r--r--. 1 root root  2893332 out 17 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/cdsp.mbn
+-rw-r--r--. 1 root root    33088 out 17 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/ipa_fws.mbn
+-rwxr-xr-x. 1 root root   242400 out 17 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/mba.mbn
+-rw-r--r--. 1 root root 60346576 jul 24 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/modem.mbn
+-rw-r--r--. 1 root root  6881468 jul 24 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/slpi.mbn
+-rw-r--r--. 1 root root   898156 jul 24 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/venus.mbn
+-rwxr-xr-x. 1 root root  3035876 jul 24 21:00 /usr/lib/firmware/updates/qcom/sdm845/oneplus6/wlanmdsp.mbn
+== rmtfs ==
+● rmtfs.service - Qualcomm remotefs service
+     Loaded: loaded (/usr/lib/systemd/system/rmtfs.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Sat 2026-10-17 21:00:20 -03; 1 week 6 days ago
+ Invocation: 84d776dd993d4267b8ea12465eed426c
+   Main PID: 1049 (rmtfs)
+      Tasks: 1 (limit: 9196)
+     Memory: 38.8M (peak: 95M)
+        CPU: 355ms
+== pd-mapper ==
+○ pd-mapper.service - Qualcomm PD mapper service
+     Loaded: loaded (/usr/lib/systemd/system/pd-mapper.service; disabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead)
+== tqftpserv ==
+● tqftpserv.service - QRTR TFTP service
+     Loaded: loaded (/usr/lib/systemd/system/tqftpserv.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Sat 2026-10-17 21:00:20 -03; 1 week 6 days ago
+ Invocation: 6f51b6cd72974ebaafcdad20fd945431
+   Main PID: 1071 (tqftpserv)
+      Tasks: 1 (limit: 9196)
+     Memory: 4.7M (peak: 10.7M)
+        CPU: 39ms

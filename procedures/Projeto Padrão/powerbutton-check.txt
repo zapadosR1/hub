@@ -1,0 +1,10 @@
+== processos ==
+2319 /usr/libexec/org_kde_powerdevil
+== dbus ==
+bash: qdbus: comando não encontrado
+dbus refresh falhou
+== logind ==
+== idle config ==
+[Daemon]
+LockOnResume=true
+Timeout=300

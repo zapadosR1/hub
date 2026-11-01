@@ -1,0 +1,12 @@
+== usuario ==
+zapados
+uid=1001(zapados) gid=1001(zapados) grupos=1001(zapados),10(wheel) contexto=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+== senha configurada? ==
+zapados:$y$j9T$vOmu11OZRcM7aeCPM9Q/X/$Ds
+== kwriteconfig ==
+/usr/bin/kwriteconfig6
+== config atual ==
+[Daemon]
+LockOnResume=false
+== kscreenlocker ==
+ls: não foi possível acessar '/usr/bin/kscreenlocker*': Arquivo ou diretório inexistente

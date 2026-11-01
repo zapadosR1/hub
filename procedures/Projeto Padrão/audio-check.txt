@@ -1,0 +1,89 @@
+== placas de som ==
+aplay: device_list:279: no soundcards found...
+== saidas (pipewire/pulse) ==
+41	raop_sink.Andres-MacBook-Air.local.192.168.152.197.7000	PipeWire	s16le 2ch 44100Hz	IDLE
+62	input.loopback.sink.role.multimedia	PipeWire	float32le 2ch 48000Hz	IDLE
+65	input.loopback.sink.role.notification	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+68	input.loopback.sink.role.phone	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+71	input.loopback.sink.role.alarm	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+74	input.loopback.sink.role.ringtone	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+76	input.loopback.sink.role.alert	PipeWire	float32le 2ch 48000Hz	SUSPENDED
+PipeWire 'pipewire-0' [1.6.10, zapados@fedora, cookie:2173025549]
+ └─ Clients:
+        33. uresourced                          [1.6.10, zapados@fedora, pid:1995]
+        34. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+        40. pipewire                            [1.6.10, zapados@fedora, pid:2003]
+        50. WirePlumber [client]                [1.6.10, zapados@fedora, pid:2005]
+        59. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+        60. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+        63. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+        66. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+        69. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+        72. WirePlumber                         [1.6.10, zapados@fedora, pid:2005]
+       137. kwin_wayland                        [1.6.10, zapados@fedora, pid:2008]
+       142. pipewire                            [1.6.10, zapados@fedora, pid:2174]
+       143. libcanberra                         [1.6.10, zapados@fedora, pid:2146]
+       144. plasmashell                         [1.6.10, zapados@fedora, pid:2170]
+       145. libcanberra                         [1.6.10, zapados@fedora, pid:2170]
+       146.                                     [1.6.10, zapados@fedora, pid:2146]
+       147. xdg-desktop-portal                  [1.6.10, zapados@fedora, pid:2428]
+       148. OpenCode                            [1.6.10, zapados@fedora, pid:196]
+       149.                                     [1.6.10, zapados@fedora, pid:2170]
+       156. wpctl                               [1.6.10, zapados@fedora, pid:3605]
+       157. OpenCode                            [1.6.10, zapados@fedora, pid:196]
+
+Audio
+ ├─ Devices:
+ │  
+ ├─ Sinks:
+ │  *   41. Andre’s MacBook Air               [vol: 1.00]
+ │  
+ ├─ Sources:
+ │  
+ ├─ Filters:
+ │    - loopback-2005-11                                            
+ │      61. output.loopback.sink.role.multimedia                         [Stream/Output/Audio]
+ │      62. input.loopback.sink.role.multimedia                          [Audio/Sink]
+ │    - loopback-2005-12                                            
+ │      64. output.loopback.sink.role.notification                       [Stream/Output/Audio]
+ │      65. input.loopback.sink.role.notification                        [Audio/Sink]
+ │    - loopback-2005-13                                            
+== dsp / audio no dmesg ==
+dmesg: read kernel buffer failed: Operação não permitida
+== firmware do dsp ==
+total 83524
+drwxr-xr-x. 1 root root      304 jul 25 00:00 .
+drwxr-xr-x. 1 root root       16 jul 25 00:00 ..
+-rw-r--r--. 1 root root    14256 out 18 00:00 a630_zap.mbn
+-rw-r--r--. 1 root root 11128744 out 18 00:00 adsp.mbn
+-rwxr-xr-x. 1 root root      403 out 18 00:00 adspr.jsn
+-rwxr-xr-x. 1 root root      555 out 18 00:00 adspua.jsn
+-rw-r--r--. 1 root root  2893332 out 18 00:00 cdsp.mbn
+-rwxr-xr-x. 1 root root      403 out 18 00:00 cdspr.jsn
+-rw-r--r--. 1 root root    33088 out 18 00:00 ipa_fws.mbn
+-rwxr-xr-x. 1 root root   242400 out 18 00:00 mba.mbn
+-rw-r--r--. 1 root root 60346576 jul 25 00:00 modem.mbn
+-rwxr-xr-x. 1 root root      405 jul 25 00:00 modemr.jsn
+-rwxr-xr-x. 1 root root      713 jul 25 00:00 modemuw.jsn
+-rw-r--r--. 1 root root  6881468 jul 25 00:00 slpi.mbn
+-rwxr-xr-x. 1 root root      403 jul 25 00:00 slpir.jsn
+-rwxr-xr-x. 1 root root      405 jul 25 00:00 slpius.jsn
+-rw-r--r--. 1 root root   898156 jul 25 00:00 venus.mbn
+-rwxr-xr-x. 1 root root  3035876 jul 25 00:00 wlanmdsp.mbn
+== q6voiced ==
+● q6voiced@oneplus\x2cfajita.service - q6voice call audio routing
+     Loaded: loaded (/usr/lib/systemd/system/q6voiced@.service; enabled; preset: disabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: active (running) since Sun 2026-10-18 00:00:13 UTC; 1 week 6 days ago
+ Invocation: c3369d68bf7147daaee70403e784c1ec
+   Main PID: 1033 (q6voiced)
+      Tasks: 1 (limit: 9196)
+     Memory: 1.5M (peak: 2M)
+        CPU: 16ms
+     CGroup: /system.slice/system-q6voiced.slice/q6voiced@oneplus\x2cfajita.service
+             └─1033 /usr/bin/q6voiced hw:0,6
+
+out 18 00:00:13 fedora systemd[1]: Started q6voiced@oneplus\x2cfajita.service - q6voice call audio routing.
+== teste (3 s) ==
+Terminado                  timeout 3 speaker-test -t sine -f 440 -c 2 -l 1 2>&1 | tail -n 5

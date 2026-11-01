@@ -1,0 +1,25 @@
+== binario ==
+ls: não foi possível acessar '/usr/sbin/kexec': Arquivo ou diretório inexistente
+ls: não foi possível acessar '/usr/bin/kexec': Arquivo ou diretório inexistente
+ls: não foi possível acessar '/sbin/kexec': Arquivo ou diretório inexistente
+== deploy ==
+State: idle
+Deployments:
+  ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+                     Diff: 1 added
+          LayeredPackages: glibc-langpack-pt kexec-tools langpacks-pt_BR tailscale
+
+● ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+          LayeredPackages: glibc-langpack-pt langpacks-pt_BR tailscale
+                 Unlocked: development
+
+  ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+          LayeredPackages: glibc-langpack-pt langpacks-pt_BR
+== PATH ==
+/var/home/zapados/.local/bin:/var/home/zapados/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin

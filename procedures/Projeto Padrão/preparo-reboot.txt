@@ -1,0 +1,15 @@
+== 1. snapshot do boot ==
+e189cb8bdde09be81315c3f91a4034eb13c48975a0c5e39dc429cec51fe55772  /boot/grub2/grub.cfg
+cd1a133c92901a074b46796ff7d011f17d3753b96c893970e9e3f896b539c3e6  /boot/grub2/grubenv
+b0a8795ec0fab176c8527b567309b0f8b50e51abaf9b9a52b4dce66b566ec342  /boot/efi/dtb/qcom/sdm845-oneplus-fajita.dtb
+== 2. backup do firmware bt/audio ==
+== 3. script do adsp ==
+== 4. servico ==
+Created symlink '/etc/systemd/system/multi-user.target.wants/adsp-start.service' → '/etc/systemd/system/adsp-start.service'.
+== 5. droid-juicer (evita sobrescrever o firmware do bt) ==
+Created symlink '/etc/systemd/system/droid-juicer.service' → '/dev/null'.
+== 6. verificacao da unidade ==
+/usr/lib/systemd/system/q6voiced@.service:13: Special user nobody configured, this is not safe!
+/usr/lib/systemd/system/q6voiced@.service:13: Special user nobody configured, this is not safe!
+/usr/lib/systemd/system/q6voiced@.service:13: Special user nobody configured, this is not safe!
+/usr/lib/systemd/system/q6voiced@.service:13: Special user nobody configured, this is not safe!

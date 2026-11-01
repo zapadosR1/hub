@@ -1,0 +1,60 @@
+== 1. ModemManager ==
+○ ModemManager.service - Modem Manager
+     Loaded: loaded (/usr/lib/systemd/system/ModemManager.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead)
+
+out 17 21:00:31 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 17 21:00:31 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:47:56 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:47:56 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:48:01 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:48:01 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+== 2. QRTR (comunicacao com modem) ==
+  Service Version Instance Node  Port
+       66       1      180    0     1 Service registry notification service
+       43       2       18    0     4 Subsystem control service
+       15       1        0    0    26 Test service
+       51       1        2    0    27 CoreSight remote tracing service
+       21       1        0    0    28 Modem embedded file system service
+       24       1        0    0    29 Thermal mitigation device service
+       23       1        0    0    30 Thermal sensors service
+       22       1        0    0    31 Time service
+       36       1        0    0    33 Persistent device configuration service
+       49       1        2    0    34 IPA control service
+       54       1        0    0    38 <unknown>
+       17       1        0    0    40 Specific absorption rate service
+       74       1        0    0    41 <unknown>
+     4098       0        0    0    42 <unknown>
+       34       1        0    0    44 Coexistence service
+       41       1        1    0    46 RF radiated performance enhancement service
+       55       1        2    0    48 QMI-SLIM service
+      228       1        0    0    49 <unknown>
+       50       1        0    0    52 UIMRMT service
+== 3. ModemManager logs ==
+out 17 21:00:31 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 17 21:00:31 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:47:56 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:47:56 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+out 31 08:48:01 fedora systemd[1]: Dependency failed for ModemManager.service - Modem Manager.
+out 31 08:48:01 fedora systemd[1]: ModemManager.service: Job ModemManager.service/start failed with result 'dependency'.
+== 4. Modem no sysfs ==
+ls: não foi possível acessar '/sys/class/modem': Arquivo ou diretório inexistente
+ls: não foi possível acessar '/sys/bus/qrtr/devices/': Arquivo ou diretório inexistente
+== 5. remoteproc modem ==
+adsp
+running
+== 6. SIM slot ==
+ls: não foi possível acessar '/sys/class/sim': Arquivo ou diretório inexistente
+/sys/kernel/tracing/events/thermal/thermal_power_cpu_get_power_simple
+/sys/bus/platform/drivers/simple-reset
+/sys/bus/platform/drivers/simple-pm-bus
+/sys/bus/platform/drivers/simple-framebuffer
+/sys/module/governor_simpleondemand
+== 7. mmcli (se ModemManager rodar) ==
+Failed to start ModemManager.service: Tempo esgotado para conexão
+See system logs and 'systemctl status ModemManager.service' for details.
+error: couldn't find the ModemManager process in the bus
+== 8. dmesg modem ==
+dmesg: read kernel buffer failed: Operação não permitida

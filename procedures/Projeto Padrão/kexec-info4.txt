@@ -1,0 +1,16 @@
+== status ==
+State: idle
+Deployments:
+  ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+                     Diff: 1 added
+          LayeredPackages: glibc-langpack-pt kexec-tools langpacks-pt_BR tailscale
+
+● ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+== rpm -q ==
+o pacote kexec-tools não está instalado
+== rpm no cache ==
+== extraindo ==
+sem rpm em cache

@@ -1,0 +1,77 @@
+== qca/oneplus6 ==
+ls: não foi possível acessar '/usr/lib/firmware/qca/oneplus6/': Arquivo ou diretório inexistente
+== origem (rpm) ==
+/usr/lib/firmware/qca/crbtfw21.tlv.xz -> atheros-firmware-20261019-1.fc44.noarch
+/usr/lib/firmware/qca/crnv21.bin.xz -> atheros-firmware-20261019-1.fc44.noarch
+== integridade xz ==
+OK /usr/lib/firmware/qca/crbtfw21.tlv.xz
+== md5/tamanho ==
+md5sum: '/usr/lib/firmware/qca/oneplus6/crnv21.bin*': Arquivo ou diretório inexistente
+26d61dd633e36e67d5a1282f7e57a5d2  /usr/lib/firmware/qca/crnv21.bin.xz
+ls: não foi possível acessar '/usr/lib/firmware/qca/oneplus6/': Arquivo ou diretório inexistente
+-rw-r--r--. 1 root root 2132 jan  1  1970 /usr/lib/firmware/qca/crnv21.bin.xz
+== modulos ==
+hci_uart              180224  0
+btqca                  28672  1 hci_uart
+btrtl                  32768  1 hci_uart
+btintel                69632  1 hci_uart
+btbcm                  24576  1 hci_uart
+bluetooth             897024  15 btrtl,btqca,btintel,hci_uart,btbcm,bnep
+pwrseq_core            20480  1 hci_uart
+rfkill                 40960  9 nfc,bluetooth,cfg80211
+== serdev ==
+/sys/bus/serial/devices/:
+serial0
+serial0-0
+
+/sys/bus/serial/drivers/:
+hci-ti
+hci_uart_bcm
+hci_uart_h5
+hci_uart_mrvl
+hci_uart_qca
+== sistema ==
+State: idle
+Deployments:
+● ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+          LayeredPackages: glibc-langpack-pt langpacks-pt_BR tailscale
+
+  ostree-unverified-registry:quay.io/pocketblue/qualcomm-sdm845-plasma-mobile:44
+                   Digest: sha256:adcb79f29936a6dbad4dc2ce5fecace0d4657db45b782bf538cc78411d82669b
+                  Version: 44.20261029.0 (2026-10-29T18:23:33Z)
+          LayeredPackages: glibc-langpack-pt langpacks-pt_BR
+linux-firmware-whence-20261019-1.fc44.noarch
+iwlbluetooth-firmware-20261019-1.fc44.noarch
+iwlwifi-mld-firmware-20261019-1.fc44.noarch
+atheros-firmware-20261019-1.fc44.noarch
+linux-firmware-20261019-1.fc44.noarch
+bluez-libs-5.87+1.git8750129efca8-1.fc44.aarch64
+bluez-5.87+1.git8750129efca8-1.fc44.aarch64
+bluez-obexd-5.87+1.git8750129efca8-1.fc44.aarch64
+kf6-bluez-qt-6.31.0-1.fc44.aarch64
+qcom-firmware-20261019-1.fc44.noarch
+iwlwifi-mvm-firmware-20261019-1.fc44.noarch
+iwlwifi-dvm-firmware-20261019-1.fc44.noarch
+amd-gpu-firmware-20261019-1.fc44.noarch
+amd-ucode-firmware-20261019-1.fc44.noarch
+brcmfmac-firmware-20261019-1.fc44.noarch
+cirrus-audio-firmware-20261019-1.fc44.noarch
+intel-audio-firmware-20261019-1.fc44.noarch
+intel-gpu-firmware-20261019-1.fc44.noarch
+intel-npu-firmware-20261019-1.fc44.noarch
+iwlegacy-firmware-20261019-1.fc44.noarch
+libertas-firmware-20261019-1.fc44.noarch
+mt7xxx-firmware-20261019-1.fc44.noarch
+nxpwireless-firmware-20261019-1.fc44.noarch
+qcom-wwan-firmware-20261019-1.fc44.noarch
+realtek-firmware-20261019-1.fc44.noarch
+tiwilink-firmware-20261019-1.fc44.noarch
+bluez-deprecated-5.87+1.git8750129efca8-1.fc44.aarch64
+alsa-ucm-mobility-sdm845-0^20240408gitde81252-1780001847.fc44.noarch
+kernel-core-6.16.7-0.sdm845.fc44.aarch64
+kernel-modules-core-6.16.7-0.sdm845.fc44.aarch64
+kernel-modules-6.16.7-0.sdm845.fc44.aarch64
+kernel-modules-extra-6.16.7-0.sdm845.fc44.aarch64
+kernel-6.16.7-0.sdm845.fc44.aarch64

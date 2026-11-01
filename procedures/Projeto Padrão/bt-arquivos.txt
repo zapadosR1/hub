@@ -1,0 +1,14 @@
+lrwxrwxrwx. 1 root root 25 jan  1  1970 /usr/lib/firmware/updates -> /var/lib/firmware-extract
+
+/var/lib/firmware-extract/qca/:
+total 216
+drwxr-xr-x. 1 root root     40 jul 25 00:00 .
+drwxr-xr-x. 1 root root     36 jul 25 00:00 ..
+-rwxr-xr-x. 1 root root 217676 jul 25 00:00 crbtfw21.tlv
+drwxr-xr-x. 1 root root     20 jul 25 00:00 oneplus6
+
+/var/lib/firmware-extract/qca/oneplus6/:
+total 8
+drwxr-xr-x. 1 root root   20 jul 25 00:00 .
+drwxr-xr-x. 1 root root   40 jul 25 00:00 ..
+-rwxr-xr-x. 1 root root 4619 jul 25 00:00 crnv21.bin

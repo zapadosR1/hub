@@ -1,0 +1,29 @@
+== 1. Status do ModemManager ==
+× ModemManager.service - Modem Manager
+     Loaded: loaded (/usr/lib/systemd/system/ModemManager.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: failed (Result: timeout) since Sat 2026-10-31 10:20:22 -03; 1h 22min ago
+   Duration: 1min 31.957s
+ Invocation: ab038fd661774876aaeeebc383d535ee
+    Process: 9906 ExecStart=/usr/bin/ModemManager (code=dumped, signal=ABRT)
+== 2. Matando processo existente ==
+10082 ModemManager --debug
+== 3. Removendo dependencia do uim-selection ==
+== 4. Iniciando ModemManager ==
+== 5. Status ==
+○ ModemManager.service - Modem Manager
+     Loaded: loaded (/usr/lib/systemd/system/ModemManager.service; enabled; preset: enabled)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead) since Sat 2026-10-31 11:43:10 -03; 10s ago
+   Duration: 1min 31.957s
+ Invocation: 61041d7cdb5f4ba98b9c315f75733cd3
+    Process: 19086 ExecStart=/usr/bin/ModemManager (code=exited, status=0/SUCCESS)
+== 6. Modems ==
+error: couldn't create manager: O tempo limite foi alcançado
+== 7. QMI direto ==
+[qrtr://0/] Device manufacturer retrieved:
+	Manufacturer: 'QUALCOMM INCORPORATED'
+[qrtr://0/] Device model retrieved:
+	Model: '0'

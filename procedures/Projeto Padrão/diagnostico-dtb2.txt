@@ -1,0 +1,29 @@
+== ESP dtb (continua com bq27411?) ==
+ti,bq27411
+
+== node da bateria no DT em uso ==
+
+bash: /compatible: Arquivo ou diretório inexistente
+
+== grub aa64: strings devicetree / fdtdir / fdt.mod ==
+devicetree: 5
+fdtdir: 0
+fdt.mod: 0
+
+== grub.cfg ==
+72:### BEGIN 10_blscfg.cfg ###
+73:blscfg
+74:### END 10_blscfg.cfg ###
+
+== tail grub.cfg ==
+fi
+### END 30_uefi-firmware.cfg ###
+
+### BEGIN 41_custom.cfg ###
+if [ -f $prefix/custom.cfg ]; then
+  source $prefix/custom.cfg
+fi
+### END 41_custom.cfg ###
+
+== dtc? ==
+sem dtc
