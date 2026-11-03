@@ -19,32 +19,34 @@ SSHFS_OPTS="-p $SSH_PORT -o IdentityFile=$SSH_KEY -o sftp_server=/usr/libexec/op
 
 mkdir -p "$LOCAL_DIR_1" "$LOCAL_DIR_2"
 
-# Aguarda conectividade (até 60s)
+# Aguarda conectividade (até 60s) - usa DNS (ping não existe neste sistema)
 for i in $(seq 1 12); do
-    if ping -c1 -W2 "$SSH_HOST" >/dev/null 2>&1; then
+    if getent hosts "$SSH_HOST" >/dev/null 2>&1; then
         break
     fi
     sleep 5
 done
 
+LOG="$HOME/servidor-mount.log"
+
 montar() {
     local remote="$1" localdir="$2" tentativa=0
     if mountpoint -q "$localdir"; then
-        echo "[OK] $localdir já montado."
+        echo "[OK] $localdir já montado." | tee -a "$LOG"
         return 0
     fi
     while [ $tentativa -lt 5 ]; do
         tentativa=$((tentativa+1))
-        echo "Montando $localdir (tentativa $tentativa/5)..."
+        echo "$(date '+%F %T') Montando $localdir (tentativa $tentativa/5)..." | tee -a "$LOG"
         sshfs $SSHFS_OPTS "$SSH_USER@$SSH_HOST:$remote" "$localdir" 2>/tmp/sshfs_err
         if mountpoint -q "$localdir"; then
-            echo "[SUCESSO] $localdir montada!"
+            echo "$(date '+%F %T') [SUCESSO] $localdir montada!" | tee -a "$LOG"
             return 0
         fi
-        echo "[ERRO] Falha ao montar $localdir: $(cat /tmp/sshfs_err)"
+        echo "$(date '+%F %T') [ERRO] Falha ao montar $localdir: $(cat /tmp/sshfs_err)" | tee -a "$LOG"
         sleep 5
     done
-    echo "[ERRO] Não foi possível montar $localdir após 5 tentativas."
+    echo "$(date '+%F %T') [ERRO] Não foi possível montar $localdir após 5 tentativas." | tee -a "$LOG"
     return 1
 }
 
