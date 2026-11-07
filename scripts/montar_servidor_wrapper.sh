@@ -4,7 +4,9 @@
 
 SSH_HOST="cortesafe.com.br"
 SSH_PORT="2222"
-MAX_WAIT=90
+# Não bloqueia o boot esperando a rede. Se não houver internet em 10s,
+# o serviço sai e o watchdog/timer tenta novamente depois.
+MAX_WAIT=10
 WAITED=0
 
 echo "Aguardando conectividade com $SSH_HOST:$SSH_PORT (max ${MAX_WAIT}s)..."
